@@ -1,0 +1,73 @@
+.top {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  background: rgb(120, 212, 245);
+  background: linear-gradient(
+    128deg,
+    rgba(120, 212, 245, 1) 0%,
+    rgba(154, 121, 177, 1) 33%,
+    rgba(120, 212, 245, 1) 100%
+  );
+  -webkit-mask: url(https://i.imgur.com/OAxFv8g.png) center/contain no-repeat,
+    linear-gradient(#fff 0 0); /* we need this extra layer for mask-composite */
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.middle {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(155, 120, 176);
+  background: linear-gradient(
+    158deg,
+    rgba(155, 120, 176, 1) 0%,
+    rgba(227, 143, 182, 1) 40%,
+    rgba(225, 142, 182, 1) 60%,
+    rgba(155, 120, 176, 1) 100%
+  );
+  -webkit-mask: url(https://i.imgur.com/WGHS6dv.png) center/contain no-repeat,
+    linear-gradient(#fff 0 0); /* we need this extra layer for mask-composite */
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.bot {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(54, 125, 184);
+  background: linear-gradient(
+    5deg,
+    rgba(54, 125, 184, 1) 0%,
+    rgba(137, 184, 231, 1) 40%,
+    rgba(135, 183, 230, 1) 50%,
+    rgba(72, 141, 198, 1) 100%
+  );
+  -webkit-mask: url(https://i.imgur.com/obC5jUe.png) center/contain no-repeat,
+    linear-gradient(#fff 0 0); /* we need this extra layer for mask-composite */
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  opacity: 0.125;
+  filter: saturate(0.7);
+  background-image: url("https://i.imgur.com/QbNQXJK.png");
+  background-repeat: repeat;
+  animation: move-wave 20s linear infinite;
+}
+
+@keyframes move-wave {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-512px, 0);
+  }
+}

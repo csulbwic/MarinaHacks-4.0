@@ -10,9 +10,12 @@ const Landing = () => {
                     alt='logo'
                     width="588"
                     height="115"/>
-                <div className={style.bot}></div>
+                
+                <div className={style.tidepool}></div>
+                {/* <div className={style.bot}></div>
                 <div className={style.middle}></div>
-                <div className={style.top}></div>
+                <div className={style.top}></div> */}
+                <div className={style.logo}></div>
                 <div className={style.wave}></div>
             </div>
         </>

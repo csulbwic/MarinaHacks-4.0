@@ -6,7 +6,7 @@ const Landing = () => {
         <>
             <div className="h-screen w-full bg-blue-200 flex justify-center items-center">
                 <Image
-                    src={"/images/alt_landing_bg.png"}
+                    src={"/images/landing_bg.png"}
                     alt='background'
                     width="7560"
                     height="4904"

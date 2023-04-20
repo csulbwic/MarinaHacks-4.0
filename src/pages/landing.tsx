@@ -6,16 +6,19 @@ const Landing = () => {
         <>
             <div className="h-screen w-full bg-blue-200 flex justify-center items-center">
                 <Image
+                    src={"/images/landing_bg.png"}
+                    alt='background'
+                    width="7560"
+                    height="4904"
+                    className={style.bg}
+                />
+                <Image
                     src={"/images/logo_long.png"}
                     alt='logo'
                     width="588"
-                    height="115"/>
-                
-                <div className={style.tidepool}></div>
-                {/* <div className={style.bot}></div>
-                <div className={style.middle}></div>
-                <div className={style.top}></div> */}
-                <div className={style.logo}></div>
+                    height="115"
+                    className={style.logo}
+                />
                 <div className={style.wave}></div>
             </div>
         </>

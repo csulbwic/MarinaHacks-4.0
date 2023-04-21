@@ -25,11 +25,17 @@
   color: white;
 }
 
-.iconbar{
+.text{
+  font-style:Poppins;
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.learnmore{
   position: absolute;
-  bottom: 16px;
-  left: 16px;
-  flex: column;
+  justify-content: center;
+  bottom: 38%;
 }
 
 @keyframes move-wave {

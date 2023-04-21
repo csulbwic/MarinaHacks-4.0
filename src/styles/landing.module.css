@@ -35,7 +35,7 @@
 .learnmore{
   position: absolute;
   justify-content: center;
-  bottom: 38%;
+  bottom: 28%;
 }
 
 @keyframes move-wave {

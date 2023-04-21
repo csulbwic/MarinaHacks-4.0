@@ -31,7 +31,7 @@ const Landing = () => {
                     </Link>
                 </div>
                 
-                <div className="absolute bottom-[20%] left-[10%] flex column">
+                <div className="absolute bottom-[15%] left-[10%] flex column">
                     <a href="https://www.facebook.com/wic.csulb/" target='_blank'>
                         <FaFacebook className={style.icons}/>
                     </a>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 export const Contact = () => {
   return (
-      <div className="h-screen w-full flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <div>
           <Image
             src={"/images/logo_turtle.png"}

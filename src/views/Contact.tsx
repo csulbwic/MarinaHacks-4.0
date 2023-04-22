@@ -5,7 +5,7 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 export const Contact = () => {
   return (
       <div className="flex justify-center items-center">
-        <div>
+        <div className="m-12 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
           <Image
             src={"/images/logo_turtle.png"}
             alt='wiclogo'

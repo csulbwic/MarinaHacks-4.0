@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         mhblue: "#7CCDf3",
+        mhsky: "#9bb0da",
         mhpink : {
           100: "#E8ACC9",
           200: "#E38FB6",

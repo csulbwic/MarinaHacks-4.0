@@ -19,7 +19,7 @@ export const Info = () => {
           <h1 className="text-2xl pb-6">
             Attend MarinaHacks 3.0
           </h1>
-          <button className="btn btn-primary rounded-full text-xl font-thin">
+          <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
             Apply Now
           </button>
         </div>
@@ -27,7 +27,7 @@ export const Info = () => {
           <h1 className="text-2xl pb-6">
             Volunteer at MarinaHacks 3.0
           </h1>
-          <button className="btn btn-primary rounded-full text-xl font-thin">
+          <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
             Apply Now
           </button>
         </div>

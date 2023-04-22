@@ -9,7 +9,7 @@ const Teams = () => {
         </svg>
       </div>
       <div className="bg-mhpink-100 px-28">
-        <h1 className="text-white text-4xl font-bold">Main Organizers</h1>
+        <h1 className="text-white text-4xl font-bold pb-6">Main Organizers</h1>
         <div className="flex flex-row flex-wrap gap-16">
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 1).map((item, index) => {
@@ -25,7 +25,7 @@ const Teams = () => {
         </svg>
       </div>
       <div className="bg-mhpink-300 px-28">
-        <h1 className="text-white text-4xl font-bold">Website Committee</h1>
+        <h1 className="text-white text-4xl font-bold pb-6">Website Committee</h1>
         <div className="flex flex-row flex-wrap gap-16">
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 2).map((item, index) => {
@@ -41,7 +41,7 @@ const Teams = () => {
         </svg>
       </div>
       <div className="bg-mhpurple-200 px-28">
-        <h1 className="text-white text-4xl font-bold">Sponsorship Committee</h1>
+        <h1 className="text-white text-4xl font-bold pb-6">Sponsorship Committee</h1>
         <div className="flex flex-row flex-wrap gap-16">
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 3).map((item, index) => {
@@ -57,7 +57,7 @@ const Teams = () => {
         </svg>
       </div>
       <div className="bg-mhpurple-400 px-28 pb-28">
-        <h1 className="text-white text-4xl font-bold">Sponsorship Committee</h1>
+        <h1 className="text-white text-4xl font-bold pb-6">Sponsorship Committee</h1>
         <div className="flex flex-row flex-wrap gap-16">
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 4).map((item, index) => {

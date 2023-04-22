@@ -1,4 +1,4 @@
-const Sponsors = () => {
+export const Sponsors = () => {
   return(
     <div>
       <h1>
@@ -7,5 +7,3 @@ const Sponsors = () => {
     </div>
   )
 }
-
-export default Sponsors

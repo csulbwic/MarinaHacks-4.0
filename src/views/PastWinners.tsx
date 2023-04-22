@@ -1,4 +1,4 @@
-const PastWinners = () => {
+export const PastWinners = () => {
   return(
     <div>
       <h1>
@@ -7,5 +7,3 @@ const PastWinners = () => {
     </div>
   )
 }
-
-export default PastWinners

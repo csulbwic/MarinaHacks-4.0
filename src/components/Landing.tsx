@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import {FaTwitter, FaFacebook,FaInstagram,FaLinkedin} from "react-icons/fa"
 
-const Landing = () => {
+export const Landing = () => {
     return (
         <>
             <div className="h-screen w-full bg-blue-200 flex justify-center items-center">
@@ -50,5 +50,3 @@ const Landing = () => {
         </>
     );
 }
-
-export default Landing;

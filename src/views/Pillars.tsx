@@ -1,4 +1,4 @@
-const Pillars = () => {
+export const Pillars = () => {
   return(
     <div>
       <h1>
@@ -7,4 +7,3 @@ const Pillars = () => {
     </div>
   )
 }
-export default Pillars

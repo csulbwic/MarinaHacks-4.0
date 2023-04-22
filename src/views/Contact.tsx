@@ -1,11 +1,9 @@
-const Contact = () => {
+export const Contact = () => {
   return (
-    <div>
-      <h1>
-        Contact Section
-      </h1>
+    <div className="flex justify-center items-center">
+      <div className="text-9xl font-bold" style={{color: "black", opacity: "50%" }}>
+        CONTACT US
+      </div>
     </div>
   )
 }
-
-export default Contact

@@ -1,7 +1,7 @@
 type ProfileProps = {
-  name: string;
-  role: string;
-  img: string;
+  name: string
+  role: string
+  img: string
 }
 
 export const Profile = ({ name, role, img }: ProfileProps) => {
@@ -13,5 +13,5 @@ export const Profile = ({ name, role, img }: ProfileProps) => {
         <p className="text-white text-xl">{role}</p>
       </div>
     </div>
-  );
-};
+  )
+}

@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 export const Contact = () => {
   return (
-      <div className="h-screen w-full flex justify-center align-middle">
-        <div >
+      <div className="h-screen w-full flex justify-center items-center">
+        <div>
           <Image
             src={"/images/logo_turtle.png"}
             alt='wiclogo'
@@ -13,7 +13,7 @@ export const Contact = () => {
             height="115"
           />
         </div>
-        <div className="flex-col">
+        <div className="flex-col ">
           <h1 className="text-6xl leading-[77px] text-white opacity-50"> Connect With Us </h1><br></br>
 
           <h2 className="text-base leading-[19px] text-white opacity-50">For general questions or sponsorship inquiries, please email us at csulbwic@gmail.com</h2><br></br>

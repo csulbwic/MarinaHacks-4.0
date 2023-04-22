@@ -5,7 +5,7 @@ export const Faq = () => {
         Fequently Asked Questions
       </h1>
       <p>
-        This year at MarinaHacks, develop an innovative project that targets one of our competition pillars.
+        
       </p>
     </div>
   )

@@ -23,6 +23,9 @@ module.exports = {
           400: "#7275B6",
         }
       },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [require("daisyui")],

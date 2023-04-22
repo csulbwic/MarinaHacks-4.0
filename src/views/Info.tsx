@@ -19,17 +19,21 @@ export const Info = () => {
           <h1 className="text-2xl pb-6">
             Attend MarinaHacks 3.0
           </h1>
-          <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
-            Apply Now
-          </button>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSfLktsjhdhQil4zA0cEiXslVB_OATcziWzM8d66v2YLpL1W8A/closedform'>
+            <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
+              Apply Now
+            </button>
+          </a>
         </div>
         <div className=" flex flex-col w-96 justify-center items-center p-6 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
           <h1 className="text-2xl pb-6">
             Volunteer at MarinaHacks 3.0
           </h1>
-          <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
-            Apply Now
-          </button>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSf0nTpt80nF6AcJYCSSpwemOtVZlxumAgxxGqzYO0TFIm9C1A/closedform'>
+            <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
+              Apply Now
+            </button>
+          </a>
         </div>
       </div>
       <div className="text-mhpurple-400 font-bold flex flex-col gap-8 w-5/6">

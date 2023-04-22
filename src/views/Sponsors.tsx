@@ -1,8 +1,8 @@
 export const Sponsors = () => {
   return(
-    <div>
-      <h1>
-        Sponsors Section
+    <div className="flex justify-center items-center">
+      <h1 className="text-6xl font-bold text-black opacity-50">
+        Sponsors
       </h1>
     </div>
   )

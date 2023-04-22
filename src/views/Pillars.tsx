@@ -1,3 +1,4 @@
+
 export const Pillars = () => {
   return(
     <div className="flex justify-center items-center pt-12">

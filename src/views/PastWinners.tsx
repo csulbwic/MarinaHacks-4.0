@@ -1,6 +1,6 @@
 export const PastWinners = () => {
   return(
-    <div className="flex flex-col justify-center items-center pt-16 gap-16">
+    <div id="pastwinners"  className="flex flex-col justify-center items-center pt-16 gap-16">
       <div className="flex justify-center items-center">
         <h1 className="text-6xl font-bold text-black opacity-50">
           Past Winners

@@ -2,7 +2,7 @@ import { FaRegHandshake, FaRegHeart, FaTv } from "react-icons/fa"
 
 export const Pillars = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-12">
+    <div id="pillars" className="flex flex-col justify-center items-center pt-12">
       <h1 className="text-6xl font-bold text-black opacity-50 mt-20 mb-6">
         Pillars
       </h1>

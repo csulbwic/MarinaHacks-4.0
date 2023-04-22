@@ -14,7 +14,7 @@ export const Faq = () => {
     setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
   }
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div id="faq" className="flex flex-col justify-center items-center">
       <h1 className="text-6xl font-bold text-black opacity-50 mt-20 mb-6">
         Fequently Asked Questions
       </h1>

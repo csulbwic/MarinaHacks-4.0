@@ -22,14 +22,14 @@ export const NavBar = () => {
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </a>
             <ul className="p-2 bg-mhsky ">
-              <li className='hover:bg-mhpurple-200'><a href="#">pillars</a></li>
-              <li className='hover:bg-mhpurple-200'><a href="#">past winner</a></li>
+              <li className='hover:bg-mhpurple-200'><a href="/#pillars">pillars</a></li>
+              <li className='hover:bg-mhpurple-200'><a href="/#pastwinners">past winner</a></li>
             </ul>
           </li>
           <li className='rounded hover:bg-mhpurple-200'><a href="/teams">team</a></li>
-          <li className='rounded hover:bg-mhpurple-200'><a href="#">sponsor</a></li>
-          <li className='rounded hover:bg-mhpurple-200'><a href="#">faq</a></li>
-          <li className='rounded hover:bg-mhpurple-200'><a href="#">contact</a></li>
+          <li className='rounded hover:bg-mhpurple-200'><a href="/#sponsors">sponsors</a></li>
+          <li className='rounded hover:bg-mhpurple-200'><a href="/#faq">faq</a></li>
+          <li className='rounded hover:bg-mhpurple-200'><a href="/#contact">contact</a></li>
         </ul>
       </div>
     </div>

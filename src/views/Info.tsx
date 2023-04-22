@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export const Info = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-16 gap-16">
+    <div id="" className="flex flex-col justify-center items-center pt-16 gap-16">
       <div className="flex flex-col justify-center items-center">
         <Image
           src={"/images/logo_stacked.png"}

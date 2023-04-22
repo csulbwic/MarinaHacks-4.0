@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Sponsors = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div id="sponsors"  className="flex flex-col justify-center items-center">
       <h1 className="text-6xl font-bold text-black opacity-50 mt-20 mb-12">
         Sponsors
       </h1>

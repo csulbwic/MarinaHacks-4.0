@@ -1,0 +1,48 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  position: absolute;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  opacity: 0.125;
+  filter: saturate(0.7);
+  background-image: url("https://i.imgur.com/QbNQXJK.png");
+  background-repeat: repeat;
+  animation: move-wave 20s linear infinite;
+}
+
+.icons{
+  height: 30px;
+  width: 50px;
+  color: white;
+}
+
+.text{
+  font-style:Poppins;
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.learnmore{
+  position: absolute;
+  justify-content: center;
+  bottom: 28%;
+}
+
+@keyframes move-wave {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-512px, 0);
+  }
+}

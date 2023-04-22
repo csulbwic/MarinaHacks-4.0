@@ -1,3 +1,5 @@
+import Landing from "@/components/Landing"
+
 export default function Home() {
   return (
     <div className="h-screen">
@@ -24,7 +26,9 @@ export default function Home() {
           </ul>
         </div>
       </div>
-
+        <div>
+          <Landing/>
+        </div>
       
     </div>
   )

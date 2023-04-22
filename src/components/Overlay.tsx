@@ -5,27 +5,27 @@ import Image from 'next/image'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 import Cookies from 'js-cookie'
 
-const overlayCookieName = "overlayDismissed";
+const overlayCookieName = "overlayDismissed"
 
-export const OverlayLayout = ({ children }: any) => {
-  const [showOverlay, setShowOverlay] = useState(true);
+export const OverlayLayout = ({ children}: any) => {
+  const [showOverlay, setShowOverlay] = useState(true)
 
   const handleDismiss = () => {
     setShowOverlay(false);
-    Cookies.set(overlayCookieName, "true", { expires: 7 });
-  };
+    Cookies.set(overlayCookieName, "true", { expires: 7 })
+  }
 
   useEffect(() => {
-    const cookieValue = Cookies.get(overlayCookieName);
+    const cookieValue = Cookies.get(overlayCookieName)
     if (cookieValue === "true") {
-      setShowOverlay(false);
+      setShowOverlay(false)
     }
-  }, []);
+  }, [])
 
   return (
     <>
       {showOverlay && (
-        <div className="h-screen w-full bg-blue-200 flex justify-center items-center" style={{display: showOverlay ? "flex" : "none", opacity: showOverlay ? 1 : 0, transition: "opacity 2s ease-in-out"}}>
+        <div className="h-screen w-full bg-blue-200 flex justify-center items-center" >
         <Image
           src={"/images/landing_bg.png"}
           alt='background'
@@ -60,7 +60,7 @@ export const OverlayLayout = ({ children }: any) => {
         </div>
       </div>
       )}
-      <Layout>{children}</Layout>
+      <Layout showOverlay={showOverlay} setShowOverlay={setShowOverlay}>{children}</Layout>
     </>
-  );
-};
+  )
+}

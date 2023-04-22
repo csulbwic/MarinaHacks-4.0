@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { FaYinYang } from 'react-icons/fa'
 
-export const NavBar = () => {
+export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
+
   return (
     <div className="navbar bg-mhsky font-bold text-3xl">
       <div className="flex-1">
@@ -14,9 +15,11 @@ export const NavBar = () => {
             className='w-full h-full object-contain'
           />
         </a>
-        <button className='btn btn-ghost'>
-          <FaYinYang className="text-2xl" />
-        </button>
+        {!showOverlay && (
+          <button className='btn btn-ghost' onClick={setShowOverlay}>
+            <FaYinYang className="text-2xl" />
+          </button>
+        )}
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

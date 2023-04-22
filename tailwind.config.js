@@ -7,19 +7,22 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      mhblue: "#7CCDf3",
-      mhpink100: "#E8ACC9",
-      mhpink200: "#E38FB6",
-      mhpink300: "#CF7DAD",
-      mhpurple100: "#B47AAE",
-      mhpurple200: "#9B78B0",
-      mhpurple300: "#7E76B1",
-      mhpurple400: "#7275B6",
-    }
+    extend: {
+      colors: {
+        mhblue: "#7CCDf3",
+        mhpink : {
+          100: "#E8ACC9",
+          200: "#E38FB6",
+          300: "#CF7DAD",
+        },
+        mhpurple: {
+          100: "#B47AAE",
+          200: "#9B78B0",
+          300: "#7E76B1",
+          400: "#7275B6",
+        }
+      },
+    },
   },
   plugins: [require("daisyui")],
-}
+};

@@ -1,12 +1,31 @@
+import { useEffect, useState } from "react";
+import { Layout } from "@/components";
 import style from '../styles/landing.module.css'
 import Image from 'next/image'
-import Link from 'next/link';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import Cookies from 'js-cookie'
 
-export const Landing = () => {
+const overlayCookieName = "overlayDismissed";
+
+export const OverlayLayout = ({ children }: any) => {
+  const [showOverlay, setShowOverlay] = useState(true);
+
+  const handleDismiss = () => {
+    setShowOverlay(false);
+    Cookies.set(overlayCookieName, "true", { expires: 7 });
+  };
+
+  useEffect(() => {
+    const cookieValue = Cookies.get(overlayCookieName);
+    if (cookieValue === "true") {
+      setShowOverlay(false);
+    }
+  }, []);
+
   return (
     <>
-      <div className="h-screen w-full bg-blue-200 flex justify-center items-center">
+      {showOverlay && (
+        <div className="h-screen w-full bg-blue-200 flex justify-center items-center" style={{display: showOverlay ? "flex" : "none", opacity: showOverlay ? 1 : 0, transition: "opacity 2s ease-in-out"}}>
         <Image
           src={"/images/landing_bg.png"}
           alt='background'
@@ -23,9 +42,9 @@ export const Landing = () => {
         />
         <div className={style.wave}></div>
         <div className={style.learnmore}>
-          <button className={style.text}>Learn More</button>
+          <button onClick={handleDismiss} className={style.text}>Learn More</button>
         </div>
-        <div className="absolute bottom-[15%] left-[10%] flex column">
+        <div className="absolute bottom-[20%] left-[10%] flex column">
           <a href="https://www.facebook.com/wic.csulb/" target='_blank'>
             <FaFacebook className={style.icons} />
           </a>
@@ -40,6 +59,8 @@ export const Landing = () => {
           </a>
         </div>
       </div>
+      )}
+      <Layout>{children}</Layout>
     </>
-  )
-}
+  );
+};

@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import { FaYinYang } from 'react-icons/fa'
 
 export const NavBar = () => {
   return (
     <div className="navbar bg-mhsky font-bold text-3xl">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl " href="/">
+        <a className="btn btn-ghost normal-case text-xl " href="/#home">
           <Image
             src={"/images/logo_long.png"}
             alt='logo'
@@ -13,6 +14,9 @@ export const NavBar = () => {
             className='w-full h-full object-contain'
           />
         </a>
+        <button className='btn btn-ghost'>
+          <FaYinYang className="text-2xl" />
+        </button>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

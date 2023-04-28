@@ -1,0 +1,31 @@
+{
+  "name": "marinahacks_3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.10",
+    "@types/react": "18.0.29",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^2.51.5",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "js-cookie": "^3.0.4",
+    "next": "^13.2.4",
+    "postcss": "^8.4.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "tailwindcss": "^3.2.7",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.3"
+  }
+}

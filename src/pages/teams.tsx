@@ -14,7 +14,7 @@ const Teams = () => {
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 1).map((item, index) => {
             return (
-              <Profile name={item.name} role={item.role} img={item.img} />
+              <Profile name={item.name} role={item.role} img={item.img} key={index} />
             )
           })}
         </div>
@@ -30,7 +30,7 @@ const Teams = () => {
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 2).map((item, index) => {
             return (
-              <Profile name={item.name} role={item.role} img={item.img} />
+              <Profile name={item.name} role={item.role} img={item.img} key={index}/>
             )
           })}
         </div>
@@ -46,7 +46,7 @@ const Teams = () => {
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 3).map((item, index) => {
             return (
-              <Profile name={item.name} role={item.role} img={item.img} />
+              <Profile name={item.name} role={item.role} img={item.img} key={index}/>
             )
           })}
         </div>
@@ -62,7 +62,7 @@ const Teams = () => {
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 4).map((item, index) => {
             return (
-              <Profile name={item.name} role={item.role} img={item.img} />
+              <Profile name={item.name} role={item.role} img={item.img} key={index}/>
             )
           })}
         </div>

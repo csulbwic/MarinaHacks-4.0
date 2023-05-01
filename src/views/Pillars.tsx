@@ -16,7 +16,7 @@ export const Pillars = () => {
             Connecting
           </h1>
           <p className="text-1xl text-center">
-            Social distancing & virtual learning doesn't mean we should be disconnected. Make technology that can bring us together.
+            {"Social distancing & virtual learning doesn't mean we should be disconnected. Make technology that can bring us together."}
           </p>
         </div>
         <div className="w-96 flex flex-col justify-center items-center rounded-2xl p-6 bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
@@ -25,7 +25,7 @@ export const Pillars = () => {
             Well-being
           </h1>
           <p className="text-1xl text-center">
-          COVID-19 has changed the lives of many in our communities. Create technology that can improve our own well-being, as well as the environment's.
+          {"COVID-19 has changed the lives of many in our communities. Create technology that can improve our own well-being, as well as the environment's."}
           </p>
         </div>
         <div className="w-96 flex flex-col justify-center items-center rounded-2xl p-6 bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">

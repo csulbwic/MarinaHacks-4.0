@@ -38,7 +38,7 @@ export const Info = () => {
       </div>
       <div className="text-mhpurple-400 font-bold flex flex-col gap-8 w-5/6">
         <p className="text-2xl">
-          {"Women in Computing is hosting MarinaHacks:CgIifornia State University.-Long Beach's annual women-centric hackathon- This free event is dedicated to bringing together women to hone their skills, develop confidence and fill the gender gap within the competitive tech industry-"}
+          {"Women in Computing is hosting MarinaHacks: California State University.-Long Beach's annual women-centric hackathon- This free event is dedicated to bringing together women to hone their skills, develop confidence and fill the gender gap within the competitive tech industry-"}
         </p>
         <h1 className="text-5xl">
           Marinahacks 3.0

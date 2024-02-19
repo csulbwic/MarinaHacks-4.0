@@ -25,7 +25,7 @@ const Teams = () => {
         </svg>
       </div>
       <div className="bg-mhpink-300 px-28">
-        <h1 className="text-white text-4xl font-bold pb-6">Website Committee</h1>
+        <h1 className="text-white text-4xl font-bold pb-6">Website Members</h1>
         <div className="flex flex-row flex-wrap gap-16">
           {/* Map Members of group member only */}
           {members.filter((member) => member.group === 2).map((item, index) => {

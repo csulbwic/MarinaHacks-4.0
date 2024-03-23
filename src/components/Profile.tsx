@@ -1,17 +1,21 @@
+import styles from 'src/styles/team.module.css';
+
 type ProfileProps = {
   name: string
   role: string
   img: string
+  committeeType: string
 }
 
-export const Profile = ({ name, role, img }: ProfileProps) => {
+export const Profile = ({ name, role, img, committeeType }: ProfileProps) => {
+
+  const roleClassName = `${styles.profileRole} ${styles[committeeType]}`;
+
   return (
-    <div className="flex flex-row items-center">
-      <img src={img} alt={name} className="w-40 h-40 rounded-full bg-slate-700/30" />
-      <div className="flex-1 flow-col justify-center items-center pl-4">
-        <h1 className="text-white text-2xl font-bold">{name}</h1>
-        <p className="text-white text-xl">{role}</p>
-      </div>
+    <div className={styles.profileContainer}>
+      <img src={img} alt={name} className={styles.profilePic} />
+      <div className={styles.profileName}>{name}</div>
+      <div className={roleClassName}>{role}</div>
     </div>
-  )
+  );
 }

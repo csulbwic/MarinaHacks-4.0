@@ -43,19 +43,6 @@ export const PastWinners = () => {
           </h1>
         </div>
       </div>
-      <div className="w-96 flex flex-col justify-center items-center rounded-2xl p-6 bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
-        <h1 className="text-3xl my-6">
-          Organizors
-        </h1>
-        <p className="text-1xl text-center mb-4">
-          The MarinaHacks team is a group of students from the CSULB who are passionate about creating a community of hackers and innovators. We are dedicated to providing a fun and engaging experience for all hackers, and we are excited to see what you create!
-        </p>
-        <Link href="/teams">
-          <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
-            View the Team!
-          </button>
-        </Link>
-      </div>
 
     </div>
   )

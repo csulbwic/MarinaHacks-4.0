@@ -1,4 +1,4 @@
-import { Contact, Faq, Info, PastWinners, Pillars, Sponsors } from "@/views"
+import { Contact, Faq, Info, PastWinners, Pillars, Sponsors, Team} from "@/views"
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Info />
       <Pillars />
       <PastWinners />
+      <Team />
       <Sponsors />
       <Faq />
       <Contact />

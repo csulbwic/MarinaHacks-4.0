@@ -40,7 +40,7 @@ export const OverlayLayout = ({ children}: any) => {
           height="115"
           className={style.logo}
         />
-        <div className={style.wave}></div>
+        {/* <div className={style.wave}></div> */}
         <div className={style.learnmore}>
           <button onClick={handleDismiss} className={style.text}>Learn More</button>
         </div>

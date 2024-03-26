@@ -5,8 +5,8 @@
 .sponsorshipCommittee { background-color: #4440F8; }
 
 .teamContainer {
-  padding: 50px;
-  gap: 10px;
+  /* padding: 50px; */
+  /* gap: 10px; */
 }
 
 .teamHeading {
@@ -22,7 +22,7 @@
     color: #FAFEF7;  /* CODE USED FROM FIGMA (OFF-WHITE) */
     font-family: 'Sora', sans-serif;
     text-align: center;
-    font-size: 1.75rem; 
+    font-size: 1.70rem; 
     font-weight: 800;
     border-radius: 40px;
     padding: 5px 30px;

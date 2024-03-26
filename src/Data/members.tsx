@@ -61,7 +61,14 @@ export const members = [
     img: 'https://i.imgur.com/nvNYLHP.png',
     committeeType: 'design',
   },
-  
+  {
+    name: 'Anita Demirci',
+    group: 1,
+    role: 'Design',
+    img: 'https://i.imgur.com/nvNYLHP.png',
+    committeeType: 'design',
+},
+
 
   {
     name: 'Fozhan Babaeiyan',
@@ -162,6 +169,13 @@ export const members = [
   },
   {
     name: 'Zarana Nakrani',
+    group: 2,
+    role: 'Website Developer',
+    img: 'https://i.imgur.com/nvNYLHP.png',
+    committeeType: "website",
+  },
+  {
+    name: 'Ajay Bhawariya ',
     group: 2,
     role: 'Website Developer',
     img: 'https://i.imgur.com/nvNYLHP.png',

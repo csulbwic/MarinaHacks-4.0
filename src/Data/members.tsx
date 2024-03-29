@@ -225,5 +225,19 @@ export const members = [
     img: 'https://i.imgur.com/nvNYLHP.png',
     committeeType: "spnsorship",
   },
+  {
+    name: 'Vennela Gajja',
+    group: 3,
+    role: 'Sponsorship',
+    img: 'https://i.imgur.com/nvNYLHP.png',
+    committeeType: "spnsorship",
+  },
+  {
+    name: 'Mya Barragan',
+    group: 3,
+    role: 'Sponsorship',
+    img: 'https://i.imgur.com/nvNYLHP.png',
+    committeeType: "spnsorship",
+  },
 ]
 

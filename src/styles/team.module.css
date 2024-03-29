@@ -45,6 +45,7 @@
   width: 20vw; /* minimize imge when window gets smaller */
   height: 20vw; /* minimize imge when window gets smaller */
   object-fit: cover;
+  border-radius: 50%;
   max-width: 200px; /* image does not grow beyond 300px */
   max-height: 200px; /* image does not grow beyond 300px */
 }

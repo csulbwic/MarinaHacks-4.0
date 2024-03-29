@@ -31,7 +31,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             </Link>
             <ul className="p-2 bg-mhsky ">
               <li className='hover:bg-mhpurple-200'><Link href="/#pillars">pillars</Link></li>
-              <li className='hover:bg-mhpurple-200'><Link href="/#pastwinners">past winner</Link></li>
+              <li className='hover:bg-mhpurple-200'><Link href="/#pastwinners">past winners</Link></li>
             </ul>
           </li>
           <li className='rounded hover:bg-mhpurple-200'><Link href="/#team">team</Link></li>

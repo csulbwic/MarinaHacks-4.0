@@ -8,7 +8,7 @@ export const Info = () => {
               alt='background'
               width="7560"
               height="4904"
-              className="mb-0"
+              className="object-contain"
           />
           <h1 className="text-6xl font-bold text-mhpurple-400">
             April 21st - 22rd, 2023

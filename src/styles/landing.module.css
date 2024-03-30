@@ -6,6 +6,15 @@
 
 .logo {
   position: absolute;
+  bottom: 0;
+  top: 860px;
+  left: 45px;
+}
+
+.logoo {
+  position: absolute;
+  top: 148px;
+  left: 45px;
 }
 
 .wave {
@@ -14,7 +23,7 @@
   height: 100%;
   opacity: 0.125;
   filter: saturate(0.7);
-  background-image: url("https://i.imgur.com/QbNQXJK.png");
+  background-image: url("https://imgur.com/a/CMavEuu");
   background-repeat: repeat;
   animation: move-wave 20s linear infinite;
 }

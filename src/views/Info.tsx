@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import style from "@/styles/landing.module.css";
 export const Info = () => {
   return (
       <div id="home" className="flex flex-col justify-center items-center">
@@ -9,6 +10,20 @@ export const Info = () => {
               width="7560"
               height="4904"
               className="object-contain"
+          />
+          <Image
+              alt = 'wic logo'
+              src={"/images/web-anim/WiC-logo-black.png"}
+              width="110"
+              height="102"
+              className={style.logo}
+          />
+          <Image
+              alt = 'MarinaHacks 3.5 Logo'
+              src={"/images/web-anim/MH-3.5-logo.png"}
+              width="730"
+              height="530"
+              className={style.logoo}
           />
           <h1 className="text-6xl font-bold text-mhpurple-400">
             April 21st - 22rd, 2023

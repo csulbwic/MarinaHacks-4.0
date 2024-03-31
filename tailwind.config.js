@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         mhblue: "#7CCDf3",
-        mhsky: "#9bb0da",
+        mhsky: "#DAF6FF",
         mhpink : {
           100: "#E8ACC9",
           200: "#E38FB6",
@@ -18,10 +18,12 @@ module.exports = {
         },
         mhpurple: {
           100: "#B47AAE",
-          200: "#9B78B0",
+          200: "#bc4749",
           300: "#7E76B1",
           400: "#7275B6",
-        }
+        },
+
+        fontDarkBlue : '#47C2FF',
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

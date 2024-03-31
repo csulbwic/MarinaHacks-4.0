@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+
+.sticky{
+    position: sticky;
+    /* top:px; */
+    z-index: 50;
+    position: -webkit-sticky; /* For Safari */
+    border-radius: 50px;
+}
+
+
+
+.nav{
+    margin: 20px 100px;
+    width: 90%;
+    /* border: 3px solid green; */
+    padding: 10px;
+}
+
+
+
+
+
+  

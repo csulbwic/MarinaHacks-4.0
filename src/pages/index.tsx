@@ -5,11 +5,12 @@ export default function Home() {
     <div className="bg-gradient-to-b from-mhblue via-mhpink-200 to-mhpurple-100">
       <Info />
       <Pillars />
-      <PastWinners />
+      {/* <PastWinners /> */}
       <Team />
       <Sponsors />
       <Faq />
       <Contact />
+      
     </div>
   )
 }

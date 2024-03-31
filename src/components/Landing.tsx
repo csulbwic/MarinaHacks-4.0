@@ -3,9 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 
+
 export const Landing = () => {
   return (
     <>
+      {/* <h1>hi</h1> */}
+      {/* <NavBar showOverlay={showOverlay} setShowOverlay={setShowOverlay}/> */}
       <div className="h-screen w-full bg-blue-200 flex justify-center items-center">
         <Image
           src={"/images/landing_bg.png"}

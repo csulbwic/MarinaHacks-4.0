@@ -23,6 +23,11 @@
   opacity: 95%;
 }
 
+.mediumbtn {
+  width: 400px;
+  height: 200px;
+  top: 50px;
+}
 .wave {
   position: absolute;
   width: 200%;

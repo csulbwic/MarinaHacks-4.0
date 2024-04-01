@@ -12,11 +12,12 @@ export const Info = () => {
 
     <div id="home" className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-            <div className="flex absolute right-1.5 top-100 h-2553 w-1631">
-                <a href="#" onClick={toggleChatBubble} style={{position: 'relative', top: '28px', opacity: 0}}>
-                    <Image src="/images/web-anim/simplified.png" alt="Clickable shark" width="1631"
-                           height="2553" className=" responsive h-full w-full object-cover"/>
-                </a>
+            <div className="absolute right-15 top-100">
+                <button onClick={toggleChatBubble} className ={style.mediumbtn}
+                        style={{width: '1000px', height: '600px', borderRadius: '50%', opacity: 0, top: '100px'}}>
+                    <Image src="/images/web-anim/simplified.png" alt="Clickable shark" width="1000" height="1500"
+                           className="responsive h-full w-full object-cover"/>
+                </button>
             </div>
             <Image
                 src={"/images/web-anim/landing-shark.png"}

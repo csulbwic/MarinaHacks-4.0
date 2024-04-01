@@ -6,15 +6,20 @@
 
 .logo {
   position: absolute;
-  bottom: 0;
-  top: 860px;
-  left: 45px;
+  bottom: -60%;
+  left: 2.5%;
 }
 
 .logoo {
   position: absolute;
-  top: 148px;
-  left: 45px;
+  top: 28%;
+  left: 2%;
+}
+
+.bubble{
+  position: absolute;
+  top: 100%;
+  left: 36%;
 }
 
 .wave {

@@ -18,8 +18,9 @@
 
 .bubble{
   position: absolute;
-  top: 100%;
-  left: 36%;
+  top: 80%;
+  left: 25%;
+  opacity: 95%;
 }
 
 .wave {

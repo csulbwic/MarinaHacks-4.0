@@ -12,12 +12,24 @@ export const Info = () => {
 
     <div id="home" className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-            <div className="absolute right-15 top-100">
-                <button onClick={toggleChatBubble} className ={style.mediumbtn}
-                        style={{width: '1000px', height: '600px', borderRadius: '50%', opacity: 0, top: '100px'}}>
-                    <Image src="/images/web-anim/simplified.png" alt="Clickable shark" width="1000" height="1500"
-                           className="responsive h-full w-full object-cover"/>
-                </button>
+            <div className={"absolute right-15 top-100" + style.mediumbtn}
+                 onMouseEnter={() => setShowChatBubble(true)}  // Show chat bubble when mouse enters container
+                 onMouseLeave={() => setShowChatBubble(false)} // Hide chat bubble when mouse leaves container
+            >
+                <Image
+                    src={"/images/web-anim/simplified.png"}
+                    alt="Clickable shark"
+                    width="1000"
+                    height="1500"
+                    className="responsive h-full w-full object-cover"
+                    style = {{opacity: 0}}
+                />
+                {/* Show the chat bubble conditionally */}
+                {showChatBubble && (
+                    <div className={"absolute top-0 right-0 " + style.bubble}>
+                        <Image src="/images/web-anim/bubble.png" alt="Shark bubble" width="550" height="150"  />
+                    </div>
+                )}
             </div>
             <Image
                 src={"/images/web-anim/landing-shark.png"}
@@ -78,12 +90,6 @@ export const Info = () => {
                 <p className="text-2xl">
                     {"This year's MarinaHacks will take place as fully in person 24-hour event from April 22-23rd in the CSULB USU Ballrooms. You will be able to win prizes, network with other students, attend workshops (i.e. Google, Cisco, etc.), in order to build your resume and most importantly have fun!"}
                 </p>
-                {showChatBubble && (
-                    <div className={"flex absolute top-20 left-150 " + style.bubble} >
-                        <Image src="/images/web-anim/bubble.png" alt="Shark bubble" width="550" height="150" />
-                    </div>
-
-                )}
             </div>
         </div>
     )

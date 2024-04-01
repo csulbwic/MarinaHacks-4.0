@@ -15,7 +15,7 @@ module.exports = {
         hue4: "#9BE0FF",
         hue5: "#71D1FF",
         hue6: "#5CCAFF",
-        hue7: "#5CCAFF"
+        hue7: "#47C2FF"
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

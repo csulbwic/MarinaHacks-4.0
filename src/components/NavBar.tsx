@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaYinYang } from 'react-icons/fa'
 
 export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
 
@@ -16,11 +15,6 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             className='w-full h-full object-contain'
           />
         </Link>
-        {!showOverlay && (
-          <button className='btn btn-ghost' onClick={setShowOverlay}>
-            <FaYinYang className="text-2xl" />
-          </button>
-        )}
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
@@ -31,7 +25,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             </Link>
             <ul className="p-2 bg-mhsky ">
               <li className='hover:bg-mhpurple-200'><Link href="/#pillars">pillars</Link></li>
-              <li className='hover:bg-mhpurple-200'><Link href="/#pastwinners">past winner</Link></li>
+              <li className='hover:bg-mhpurple-200'><Link href="/#pastwinners">past winners</Link></li>
             </ul>
           </li>
           <li className='rounded hover:bg-mhpurple-200'><Link href="/#team">team</Link></li>

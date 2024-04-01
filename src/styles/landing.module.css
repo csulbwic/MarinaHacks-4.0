@@ -6,15 +6,35 @@
 
 .logo {
   position: absolute;
+  bottom: -60%;
+  left: 2.5%;
 }
 
+.logoo {
+  position: absolute;
+  top: 28%;
+  left: 2%;
+}
+
+.bubble{
+  position: absolute;
+  top: 35%;
+  left: 18%;
+  opacity: 95%;
+}
+
+.mediumbtn {
+  width: 400px;
+  height: 200px;
+  top: 50px;
+}
 .wave {
   position: absolute;
   width: 200%;
   height: 100%;
   opacity: 0.125;
   filter: saturate(0.7);
-  background-image: url("https://i.imgur.com/QbNQXJK.png");
+  background-image: url("https://imgur.com/a/CMavEuu");
   background-repeat: repeat;
   animation: move-wave 20s linear infinite;
 }

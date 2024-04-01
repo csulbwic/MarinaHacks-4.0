@@ -78,8 +78,8 @@ export const Info = () => {
                     {"This year's MarinaHacks will take place as fully in person 24-hour event from April 22-23rd in the CSULB USU Ballrooms. You will be able to win prizes, network with other students, attend workshops (i.e. Google, Cisco, etc.), in order to build your resume and most importantly have fun!"}
                 </p>
                 {showChatBubble && (
-                    <div className={"flex absolute top-20 left-150 p-4 bg-white rounded-lg shadow-md " + style.bubble} >
-                        <p className="text-gray-800">Go Beach!</p>
+                    <div className={"flex absolute top-20 left-150 " + style.bubble} >
+                        <Image src="/images/web-anim/bubble.png" alt="Shark bubble" width="550" height="150" />
                     </div>
 
                 )}

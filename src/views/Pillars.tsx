@@ -1,5 +1,3 @@
-import { FaRegHandshake, FaRegHeart, FaTv } from "react-icons/fa";
-
 export const Pillars = () => {
   return (
     <div

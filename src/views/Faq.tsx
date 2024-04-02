@@ -12,38 +12,45 @@ export const Faq = () => {
 
   const toggleActive = (index: number) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
-  }
+  };
   return (
     <div id="faq" className="flex flex-col justify-center items-center">
-      <h1 className="text-6xl font-bold text-black opacity-50 mt-20 mb-6">
-        Fequently Asked Questions
+      <h1 className="container mx-auto text-4xl font-bold text-white mt-20 mb-6 drop-shadow-[0_4px_3px_rgba(0,0,0,0.25)]">
+        Frequently Asked Questions
       </h1>
-      <div className="container mx-auto my-8 p-12 rounded-xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
+      <div className="container mx-auto my-2 p-12 rounded-[50px] bg-[#D8D3FF] opacity-88">
         <div className="grid gap-4">
           {questions.map((item, index) => (
-            <div key={index}>
+            <div
+              className={`my-3 p-5 pb-[50px]  ${
+                activeIndex === index ? "rounded-[20px] bg-[#DAF6FF]" : ""
+              }`}
+              key={index}
+            >
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() => toggleActive(index)}
               >
-                <span className="text-2xl">{item.question}</span>
+                <span className="text-3xl font-bold text-black">
+                  {item.question}
+                </span>
                 <FaChevronDown
-                className={`h-6 w-6 transition-transform transform ${
-                  activeIndex === index ? "rotate-180" : ""
-                }`}
-              />
+                  className={`h-6 w-6 text-black transition-transform transform ${
+                    activeIndex === index ? "rotate-180" : ""
+                  }`}
+                />
               </button>
               <div
-                className={`overflow-hidden transition-max-height ${activeIndex === index ? "max-h-96" : "max-h-0"
-                  }`}
+                className={`overflow-hidden transition-max-height ${
+                  activeIndex === index ? "max-h-96" : "max-h-0"
+                }`}
               >
-                <p className="px-12 pt-6 text-xl">{item.answer}</p>
+                <p className="px-12 pt-6 text-xl text-black">{item.answer}</p>
               </div>
-              <div className="divider"></div> 
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

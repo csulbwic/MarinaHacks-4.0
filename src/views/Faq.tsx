@@ -31,7 +31,7 @@ export const Faq = () => {
                 className="flex items-center w-full justify-between"
                 onClick={() => toggleActive(index)}
               >
-                <span className="text-3xl font-bold text-black">
+                <span className="text-3xl font-bold text-black text-left">
                   {item.question}
                 </span>
                 <FaChevronDown

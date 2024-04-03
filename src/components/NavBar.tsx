@@ -16,11 +16,12 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             className='w-full h-full object-contain'
           />
         </Link>
-        {!showOverlay && (
+        {showOverlay}
+        {/* {!showOverlay && (
           <button className='btn btn-ghost' onClick={setShowOverlay}>
             <FaYinYang className="text-2xl" />
           </button>
-        )}
+        )} */}
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

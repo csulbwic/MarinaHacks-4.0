@@ -21,7 +21,7 @@ export const Landing = () => {
           height="115"
           className={style.logo}
         />
-        <div className={style.wave}></div>
+        {/* <div className={style.wave}></div> */}
         <div className={style.learnmore}>
           <button className={style.text}>Learn More</button>
         </div>

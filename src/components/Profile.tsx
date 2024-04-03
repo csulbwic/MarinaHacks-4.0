@@ -1,4 +1,4 @@
-import styles from 'src/styles/team.module.css';
+import styles from '../styles/team.module.css';
 
 type ProfileProps = {
   name: string

@@ -8,7 +8,7 @@ import Cookies from 'js-cookie'
 const overlayCookieName = "overlayDismissed"
 
 export const OverlayLayout = ({ children}: any) => {
-  const [showOverlay, setShowOverlay] = useState(true)
+  const [showOverlay, setShowOverlay] = useState(false)
 
   const handleDismiss = () => {
     setShowOverlay(false);
@@ -26,21 +26,21 @@ export const OverlayLayout = ({ children}: any) => {
     <>
       {showOverlay && (
         <div className="h-screen w-full bg-blue-200 flex justify-center items-center" >
-        <Image
-          src={"/images/landing_bg.png"}
-          alt='background'
-          width="7560"
-          height="4904"
-          className={style.bg}
-        />
-        <Image
-          src={"/images/logo_long.png"}
-          alt='logo'
-          width="588"
-          height="115"
-          className={style.logo}
-        />
-        {/* <div className={style.wave}></div> */}
+        {/*// <Image
+        //   src={"/images/landing_bg.png"}
+        //   alt='background'
+        //   width="7560"
+        //   height="4904"
+        //   className={style.bg}
+        // />
+        // <Image
+        //   src={"/images/logo_long.png"}
+        //   alt='logo'
+        //   width="588"
+        //   height="115"
+        //   className={style.logo}
+        // />
+        // {/* <div className={style.wave}></div> */}
         <div className={style.learnmore}>
           <button onClick={handleDismiss} className={style.text}>Learn More</button>
         </div>

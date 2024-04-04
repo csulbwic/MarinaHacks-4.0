@@ -1,15 +1,17 @@
 import Image from 'next/image'
+import { Layout } from '@/components'
 export const Info = () => {
   return (
     <div id="home" className="flex flex-col justify-center items-center pt-16 gap-16">
       <div className="flex flex-col justify-center items-center">
-        <Image
+        {/* <Image
           src={"/images/logo_stacked.png"}
           alt='logo'
           width="400"
           height="400"
           className="object-contain"
-        />
+        /> */}
+        <Layout />
         <h1 className="text-6xl font-bold text-mhpurple-400">
           April 21st - 22rd, 2023
         </h1>

@@ -1,11 +1,106 @@
+.container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.fadeIn{
+  height: 100vh;
+  opacity: 1; /* Start with transparency */
+  transition: opacity 5s ease-in-out; /* Transition effect duration */
+}
+
+.fadeOut{
+  opacity: 0;
+}
 .bg {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 .logo {
   position: absolute;
+  /* width: 100vw; */
+  left: 5px;
+  bottom: 3vh;
+  height: 650px;
+  z-index: 2;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.clublogo{
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  z-index: 5;
+}
+
+@-webkit-keyframes rollOut {
+  0% {
+     opacity: 1;
+     -webkit-transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+     opacity: 0;
+     -webkit-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+  @keyframes rollOut {
+    0% {
+       opacity: 1;
+       transform: translateX(0px) rotate(0deg);
+    }
+    100% {
+       opacity: 0;
+       transform: translateX(100%) rotate(120deg);
+    }
+ }
+ 
+ .rollOut {
+    -webkit-animation-name: rollOut;
+    animation-name: rollOut;
+ }
+
+
+.foreground{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.bubble{
+  position: absolute;
+  top:10%;
+  left:18%;
+  /* width: 110vh; */
+  opacity: 95%;
+  z-index: 4;
+}
+
+.mediumbtn {
+  width: 100px;
+  height: 100;
+  top: 50px;
+}
+
+.chatbubble{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  opacity: 95%;
+  z-index: 5;
+}
+
+.logoo{
+  position: absolute;
+  top: 5%;
+  z-index: 5;
 }
 
 .wave {
@@ -45,4 +140,53 @@
   to {
     transform: translate(-512px, 0);
   }
+} 
+
+/* body {
+  margin: 0;
+  padding: 0;
+  background-color: #b3e0ff; /* Sky blue */
+ 
+.sun {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px; /* Larger sun */
+  height: 120px;
+  background-color: #ffcc00; /* Bright yellow */
+  border-radius: 50%;
+}
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Deeper water */
+  background-color: #66ccff; /* Calm blue water */
+}
+.shore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Wider sandy shore */
+  background-color: #ffcc99; /* Sandy shore color */
+}
+.mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Taller mountains */
+  background-color: #339933; /* Green mountains */
+}
+.clouds {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px; /* Large fluffy clouds */
+  height: 80px;
+  background-color: #ffffff; /* White clouds */
+  border-radius: 50%;
+  opacity: 0.8;
 }

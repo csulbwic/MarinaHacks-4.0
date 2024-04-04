@@ -8,14 +8,14 @@ type FaqItem = {
 };
 
 export const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleActive = (index: number) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   return (
-    <div id="faq" className="flex flex-col justify-center items-center">
-      <h1 className="container mx-auto text-5xl font-extrabold text-white mt-20 mb-2 pb-10 drop-shadow-[0_4px_3px_rgba(0,0,0,0.25)]">
+    <div id="faq" className="flex flex-col justify-center items-center ">
+      <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10 pt-20">
         Frequently Asked Questions
       </h1>
       <div className="container mx-auto my-2 p-12 rounded-[50px] bg-[#D8D3FF] opacity-88">

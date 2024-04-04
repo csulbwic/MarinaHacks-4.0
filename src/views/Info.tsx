@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export const Info = () => {
   return (
-    <div id="home" className="flex flex-col justify-center items-center pt-16 gap-16">
+    <div id="info" className="flex flex-col justify-center items-center pt-16 gap-16">
 
       <div className="pt-20"> {/* Adjust the padding value as needed */}
         <Image

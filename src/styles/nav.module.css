@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.sticky{
+    position: sticky;
+    z-index: 50;
+    position: -webkit-sticky; /* For Safari */
+    border-radius: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center; /* Center flex items horizontally */
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 0; /* Add this */
+    right: 0; /* Add this */
+    padding: 0.7rem 2rem;
+    width: 60%;
+    background-color: rgba(249, 186, 255, 0.55); /* Solid pink color */
+    color: #7275B6;
+    opacity: 0.9; /* Adjust as needed */
+    border-radius: 50px;
+    z-index: 50;
+}
+
+.containerNav{
+    flex-direction: column;
+    align-items: start;
+}
+
+.menuNav{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.menuNavopen{
+    justify-content: flex-start;
+    display: flex;
+}
+
+.ulist{
+    display: flex; /* Make sure the list is always flex to keep items in line */
+}
+
+.sublist{
+    z-index: 999;
+}
+
+.menuBtn{
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+@media (max-width: 425px){
+    .nav{ 
+        width: 70vw; /* Adjust width for mobile */
+    }
+}
+
+@media (min-width: 1400px){
+    .nav{
+       display: flex;
+       justify-content: center;
+       font-size: 1.5rem;
+       left: 0; /* Ensure full width */
+       right: 0; /* Ensure full width */
+       margin: auto; /* Center horizontally */
+    }
+
+    .ulist{
+       display: flex;
+    }
+
+   .containerNav{
+       flex-direction: row;
+   }
+
+   .menuNav{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+   }
+
+   .menuBtn{
+       display: none;
+   }
+}

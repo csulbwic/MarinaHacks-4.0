@@ -15,8 +15,8 @@ export const Sponsors = () => {
           <Image
             src = {"/images/sponsors/coe_transparent_logo.png"}
             alt = 'background'
-            width={325}
-            height={325}
+            width={300}
+            height={300}
           />
         </div>
 

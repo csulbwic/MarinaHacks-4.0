@@ -1,7 +1,7 @@
 export { Contact } from './Contact';
 export { Faq } from './Faq';
 export { Info } from './Info';
-export { PastWinners } from './PastWinners';
+export { Prizes } from './Prizes';
 export { Team } from './Team';
 export { Pillars } from './Pillars';
 export { Sponsors } from './Sponsors';

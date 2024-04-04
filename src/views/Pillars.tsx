@@ -6,7 +6,7 @@ export const Pillars = () => {
       id="pillars"
       className="flex flex-col justify-center items-center pt-12"
     >
-      <h1 className="text-6xl font-extrabold text-[#57417A] mt-20 mb-2 pb-10">Pillars</h1>
+      <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
       <div className="container flex flex-col justify-center items-center gap-6 mb-10 relative z-10">
         <div className="w-full m-5 flex flex-row justify-start items-center rounded-2xl p-2 bg-[#A798FF]">
           <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">

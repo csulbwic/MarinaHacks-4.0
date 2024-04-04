@@ -10,7 +10,7 @@
 }
 
 .teamHeading {
-    color: #FAFEF7;  /* CODE USED FROM FIGMA (OFF-WHITE) */
+    color: #0F516F;  /* CODE USED FROM FIGMA (OFF-WHITE) */
     font-family: 'Sora', sans-serif;
     text-align: center;
     font-size: 3.5rem; 
@@ -51,7 +51,7 @@
 }
 
 .profileName {
-  color: #FAFEF7;
+  color: #0F516F;
   text-align: center;
   font-size: 0.80rem; 
   font-weight: 700;

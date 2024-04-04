@@ -17,11 +17,18 @@
     right: 0; /* Add this */
     padding: 0.7rem 2rem;
     width: 60%;
-    background-color: rgba(249, 186, 255, 0.55); /* Solid pink color */
+    background-color: rgba(249, 186, 255, 0.9); /*Solid pink color*/
     color: #7275B6;
-    opacity: 0.9; /* Adjust as needed */
     border-radius: 50px;
     z-index: 50;
+}
+
+.logo{
+    display: block;
+}
+
+.logoNone{
+    display: none;
 }
 
 .containerNav{
@@ -46,6 +53,7 @@
 }
 
 .sublist{
+    background-color:rgba(249, 186, 255, 0.8) ;
     z-index: 999;
 }
 
@@ -56,15 +64,31 @@
 
 @media (max-width: 425px){
     .nav{ 
-        width: 70vw; /* Adjust width for mobile */
+        display: flex;
+        justify-content: flex-start;
+        width: 100vw; /* Adjust width for mobile */
+        background-color: rgba(249, 186, 255, 1);
     }
 }
+
+@media (max-width: 1440px){
+
+.nav{
+       display: flex;
+       justify-content: center;
+       font-size: 1.2rem;
+       left: 0; /* Ensure full width */
+       right: 0; /* Ensure full width */
+       margin: auto; /* Center horizontally */
+    }
+}
+
 
 @media (min-width: 1400px){
     .nav{
        display: flex;
        justify-content: center;
-       font-size: 1.5rem;
+       font-size: 1.2rem;
        left: 0; /* Ensure full width */
        right: 0; /* Ensure full width */
        margin: auto; /* Center horizontally */
@@ -87,4 +111,19 @@
    .menuBtn{
        display: none;
    }
+
+   .logo{
+    display: block;
+    }
+
+    .logoNone{
+        display: block;
+    }
+}
+
+@media (min-width: 1400px){
+    .nav{
+        font-size: 1.5rem;
+    }
+
 }

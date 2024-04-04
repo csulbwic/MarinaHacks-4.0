@@ -3,12 +3,13 @@ import style from '../styles/nav.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaYinYang } from 'react-icons/fa'
+// import '../styles/nav.module.css'
 
 export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
 
   return (
     
-    <div className={`navbar ${style.sticky} ${style.nav}  bg-mhsky font-bold text-fontDarkBlue text-3xl`}>
+    <div className={`navbar ${style.nav}  bg-mhsky font-bold text-fontDarkBlue text-3xl`}>
       <div className="flex-1">
         <Link className="btn btn-ghost normal-case text-xl " href="/#home">
           <Image
@@ -28,6 +29,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
       </div>
 
       <div className="flex-none">
+
         <ul className="menu menu-horizontal px-1">
           <li className='rounded hover:bg-mhpurple-200'><Link href="/#team">home</Link></li>
           <li tabIndex={0} >
@@ -36,6 +38,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
               about
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </Link>
+
             <ul className="p-2 bg-mhsky ">
               <li className='hover:bg-mhpurple-200'><Link href="/#pillars">pillars</Link></li>
 

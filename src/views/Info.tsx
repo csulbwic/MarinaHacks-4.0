@@ -24,7 +24,7 @@ export const Info = () => {
           <div className="h-4"></div>
           <div className="h-4"></div>
 
-          <a href='https://docs.google.com/forms/d/e/1FAIpQLSc4r0qtlzA3Kip3WVEgyN_RnBzBUq3TvY_GOkCQCCFPiEXJeQ/viewform?usp=sharing'>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSc4r0qtlzA3Kip3WVEgyN_RnBzBUq3TvY_GOkCQCCFPiEXJeQ/viewform'>
             <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
               Apply Now
             </button>
@@ -40,7 +40,7 @@ export const Info = () => {
           <p className="text-white text-lg">Apply to be a judge that will rate and rank the work of all hackers.</p>
           <div className="h-4"></div>
           <div className="h-4"></div>
-          <a href='https://docs.google.com/forms/d/e/1FAIpQLSd-uMWQMbPGWr7lrueLpctAaYg23QsCSz92f9CtUcIVPZZqkg/viewform?usp=sharing'>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSd-uMWQMbPGWr7lrueLpctAaYg23QsCSz92f9CtUcIVPZZqkg/viewform'>
             <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
               Apply Now
             </button>
@@ -56,7 +56,7 @@ export const Info = () => {
           <p className="text-white text-lg">Apply if you want to provide insight as a guest speaker during the event.</p>
           <div className="h-4"></div>
           <div className="h-4"></div>
-          <a href='https://docs.google.com/forms/d/e/1FAIpQLSflLAa_6X-5Qjov5_qzQ71g7UObejnXUozxYXlbDsD_tKjhrw/viewform?usp=sharing'>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSflLAa_6X-5Qjov5_qzQ71g7UObejnXUozxYXlbDsD_tKjhrw/viewform'>
             <button className="btn btn-primary rounded-full text-xl font-thin bg-purple-900/50">
               Apply Now
             </button>

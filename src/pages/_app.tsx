@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>MarinaHacks 3.0</title>
+        <title>MarinaHacks 3.5</title>
       </Head>
       <main>
         <OverlayLayout>

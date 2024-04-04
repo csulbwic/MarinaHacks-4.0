@@ -4,6 +4,7 @@ import style from '../styles/landing.module.css'
 import Image from 'next/image'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 import Cookies from 'js-cookie'
+import { NavBar } from "@/components";
 
 const overlayCookieName = "overlayDismissed"
 
@@ -24,6 +25,7 @@ export const OverlayLayout = ({ children}: any) => {
 
   return (
     <>
+      <NavBar showOverlay={showOverlay} setShowOverlay={setShowOverlay}/>
       {showOverlay && (
         <div className="h-screen w-full bg-blue-200 flex justify-center items-center" >
         <Image

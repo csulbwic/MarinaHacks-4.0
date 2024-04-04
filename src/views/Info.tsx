@@ -1,18 +1,16 @@
 import Image from 'next/image'
 export const Info = () => {
   return (
-    <div id="home" className="flex flex-col justify-center items-center pt-16 gap-16">
-      <div className="flex flex-col justify-center items-center">
+    <div id="info" className="flex flex-col justify-center items-center pt-16 gap-16">
+
+      <div className="pt-20"> {/* Adjust the padding value as needed */}
         <Image
-          src={"/images/logo_stacked.png"}
-          alt='logo'
-          width="400"
-          height="400"
-          className="object-contain"
+          src="/images/MarinaHacks_3.5.png" 
+          alt="About Logo"
+          width={500} 
+          height={500} 
+          objectFit="contain" 
         />
-        <h1 className="text-6xl font-bold text-mhpurple-400">
-          April 21st - 22rd, 2024
-        </h1>
       </div>
       <div className="flex justify-center items-center gap-24">
       <div className="flex flex-col w-96 justify-center items-center p-6 rounded-2xl bg-purple-400">
@@ -64,17 +62,19 @@ export const Info = () => {
         </div>
 
       </div>
-      <div className="text-mhpurple-400 font-bold flex flex-col gap-8 w-5/6">
-        <p className="text-2xl">
-          {"Women in Computing is hosting MarinaHacks: California State University.-Long Beach's annual women-centric hackathon- This free event is dedicated to bringing together women to hone their skills, develop confidence and fill the gender gap within the competitive tech industry-"}
-        </p>
-        <h1 className="text-5xl">
-          Marinahacks 3.0
-        </h1>
-        <p className="text-2xl">
-          {"This year's MarinaHacks will take place as fully in person 24-hour event from April 22-23rd in the CSULB USU Ballrooms. You will be able to win prizes, network with other students, attend workshops (i.e. Google, Cisco, etc.), in order to build your resume and most importantly have fun!"}
-        </p>
+      <div className="flex flex-row justify-center items-start max-w-4xl mx-auto text-center">
+          
+          <div className="text-mhpurple-400 font-bold flex flex-col gap-8 max-w-4xl mx-auto text-center">
+            <p className="text-2xl" style={{ color: '#7275B6'}}>
+              {"Women in Computing is hosting MarinaHacks: California State University Long Beach's annual women-centric hackathon! This free event is dedicated to bringing together women to hone their skills, develop confidence and fill the gender gap within the competitive tech industry."}
+            </p>
+            <p className="text-2xl" style={{ color: '#7275B6'}}>
+              {"This semester's MarinaHacks Mini will take place virtually as a 24-hour event from April 20-21st via Discord. You will be able to win prizes, network with other students, attend workshops, in order to build your resume and most importantly have fun!"}
+            </p>
+          </div>
       </div>
     </div>
+
+    
   )
 }

@@ -19,9 +19,7 @@ export const Prizes = () => {
             width="450"
             height="450"
           />
-          <h1 className="text-4xl font-extrabold text-white absolute top-1/2 left-1/2 transform -translate-x-[47%] -translate-y-[200%] text-center">
-            First Prize
-          </h1>
+    
         </div>
 
         <div className="relative">
@@ -31,9 +29,6 @@ export const Prizes = () => {
             width="450"
             height="450"
           />
-          <h1 className="text-4xl font-extrabold text-white absolute top-1/2 left-1/2 transform -translate-x-[47%] -translate-y-[135%] text-center">
-            Second Prize
-          </h1>
         </div>
 
         <div className="relative">
@@ -43,9 +38,7 @@ export const Prizes = () => {
             width="450"
             height="450"
           />
-          <h1 className="text-4xl font-extrabold text-white absolute top-1/2 left-1/2 transform -translate-x-[47%] -translate-y-[200%] text-center">
-            Third Prize
-          </h1>
+
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
   
   return (
-    <div className={`${styles.nav} navbar bg-mhsky font-bold text-fontDarkBlue text-3xl`}>
+    <div className={`${styles.nav} bg-mhsky font-bold text-fontDarkBlue text-3xl`}>
       <div className={`${styles.logo}  ${menuOpen ? `${styles.logoNone}` : ""} flex-1`}>
         <Link className={`btn btn-ghost normal-case text-xl `} href="/#home">
           <Image

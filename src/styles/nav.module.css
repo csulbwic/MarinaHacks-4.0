@@ -62,18 +62,13 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 425px){
-    .nav{ 
-        display: flex;
-        justify-content: flex-start;
-        width: 100vw; /* Adjust width for mobile */
-        background-color: rgba(249, 186, 255, 1);
-    }
-
-    .menu-horizontal{
-        display: none;
-    }
+.menu-horizontal{
+    display: none;
+    width: max-content;
+    flex-direction: row;
 }
+
+
 
 
 @media screen and (min-width: 1000px){
@@ -111,6 +106,12 @@
     .menuBtn{
         display: none;
     }
+
+    .menu-horizontal{
+        display: inline-flex;
+        width: max-content;
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1400px){
@@ -147,6 +148,11 @@
 
     .logoNone{
         display: block;
+    }
+    .menu-horizontal{
+        display: inline-flex;
+        width: max-content;
+        flex-direction: row;
     }
 }
 

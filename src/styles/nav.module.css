@@ -39,7 +39,7 @@
 .menuNav{
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: max-content;
     margin-bottom: 0.25rem;
 }
 
@@ -69,6 +69,10 @@
         width: 100vw; /* Adjust width for mobile */
         background-color: rgba(249, 186, 255, 1);
     }
+
+    .menu-horizontal{
+        display: none;
+    }
 }
 
 
@@ -81,6 +85,13 @@
         left: 0; /* Ensure full width */
         right: 0; /* Ensure full width */
         margin: auto; /* Center horizontally */
+    }
+
+    .menuNav{
+        display: inline-flex;
+        flex-direction: row;
+        width: max-content;
+        margin-bottom: 0.25rem;
     }
 
     .ulist{

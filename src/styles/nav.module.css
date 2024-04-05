@@ -62,7 +62,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 425px){
+@media screen and (max-width: 425px){
     .nav{ 
         display: flex;
         justify-content: flex-start;
@@ -71,7 +71,7 @@
     }
 }
 
-@media (max-width: 1440px){
+@media screen and (max-width: 1440px){
 
 .nav{
        display: flex;
@@ -84,7 +84,7 @@
 }
 
 
-@media (min-width: 1400px){
+@media screen and (min-width: 1400px){
     .nav{
        display: flex;
        justify-content: center;
@@ -121,7 +121,7 @@
     }
 }
 
-@media (min-width: 1400px){
+@media screen and (min-width: 1400px){
     .nav{
         font-size: 1.5rem;
     }

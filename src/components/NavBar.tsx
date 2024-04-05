@@ -26,7 +26,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
           </button>
         )} */}
       </div> 
-      <div className={`${styles.containerNav} flex-none`}>
+      <div className={`${styles.containerNav}`}>
 
         <div className={` ${styles.menuBtn}`} onClick={() => setMenuOpen(!menuOpen)}>
           <img src="../images/menu_logo.png" width={30} height={30} alt="" /> 

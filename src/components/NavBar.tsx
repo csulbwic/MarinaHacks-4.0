@@ -1,14 +1,14 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { FaYinYang } from 'react-icons/fa'
-import styles from '@/styles/nav.module.css'
-import { useState } from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaYinYang } from 'react-icons/fa';
+import styles from '@/styles/nav.module.css';
+import { useState } from 'react';
 
 export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
   
   return (
-    <div className={`navbar ${styles.nav}  bg-mhsky font-bold text-fontDarkBlue text-3xl`}>
+    <div className={`${styles.nav} navbar bg-mhsky font-bold text-fontDarkBlue text-3xl`}>
       <div className={`${styles.logo}  ${menuOpen ? `${styles.logoNone}` : ""} flex-1`}>
         <Link className={`btn btn-ghost normal-case text-xl `} href="/#home">
           <Image

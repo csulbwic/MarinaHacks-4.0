@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaYinYang } from 'react-icons/fa'
-import style from '../styles/nav.module.css'
+import style from '@/styles/nav.module.css'
 import { useState } from 'react'
 
 export const NavBar = ({ showOverlay, setShowOverlay }: any) => {

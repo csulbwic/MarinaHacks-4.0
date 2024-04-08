@@ -12,7 +12,7 @@ export const Info = () => {
           objectFit="contain" 
         />
       </div>
-      <div className="flex justify-center items-center gap-24">
+      {/* <div className="flex justify-center items-center gap-24">
       <div className="flex flex-col w-96 justify-center items-center p-6 rounded-2xl bg-purple-400">
           <h1 className="text-2xl pb-6">
             Become a Participant
@@ -61,7 +61,7 @@ export const Info = () => {
           </a>
         </div>
 
-      </div>
+      </div> */}
       <div className="flex flex-row justify-center items-start max-w-4xl mx-auto text-center">
           
           <div className="text-mhpurple-400 font-bold flex flex-col gap-8 max-w-4xl mx-auto text-center">

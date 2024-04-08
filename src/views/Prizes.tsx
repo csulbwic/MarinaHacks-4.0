@@ -14,7 +14,7 @@ export const Prizes = () => {
         {/* 2020 Winners */}
         <div className="relative">
           <Image
-            src={"/images/Prize_Jellyfish.png"}
+            src={"/images/mousepad_jellyfish.png"}
             alt="First Prize"
             width="450"
             height="450"
@@ -24,7 +24,7 @@ export const Prizes = () => {
 
         <div className="relative">
           <Image
-            src={"/images/Prize_Jellyfish.png"}
+            src={"/images/mouse_jellyfish.png"}
             alt="Second Prize"
             width="450"
             height="450"
@@ -33,7 +33,7 @@ export const Prizes = () => {
 
         <div className="relative">
           <Image
-            src={"/images/Prize_Jellyfish.png"}
+            src={"/images/speakers_jellyfish.png"}
             alt="Third Prize"
             width="450"
             height="450"

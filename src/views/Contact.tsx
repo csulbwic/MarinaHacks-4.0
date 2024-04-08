@@ -13,7 +13,7 @@ export const Contact = () => {
           <Image
             src={"/images/MarinaHacks_3.5_Round_Logo.png"}
             alt='wiclogo'
-            width="400"
+            width="350"
             height="100"
           />
         </div>
@@ -23,14 +23,14 @@ export const Contact = () => {
           <h2 className="text-base font-bold leading-[19px] text-[#0F516F]">for general questions or sponsorship inquiries, please email us at csulbwic@gmail.com !</h2><br></br>
 
           <div className="flex">
-            < a href="https://csulbwic.com/" target='_blank'>
+            { /*< a href="https://csulbwic.com/" target='_blank'>
               <Image
                 src={"/images/wic_logo_white.png"}
                 alt='wiclogo'
                 width="100"
                 height="100"
-              />
-            </a>
+              /> 
+            </a> */}
             <a href="https://www.facebook.com/wic.csulb/" target='_blank'>
               <FaFacebook className="h-[50px] w-[80px] text-white" />
             </a>

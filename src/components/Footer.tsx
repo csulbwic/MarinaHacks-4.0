@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Footer = () => {
   return (
-    <footer className="footer items-center p-4 text-neutral-content" style={{backgroundColor: '#7275B6'}}>
+    <footer className="footer items-center p-4 text-neutral-content" style={{backgroundColor: '#bcc5f9'}}>
       <div className="items-center grid-flow-col">
         <a href="https://csulbwic.com/" target='_blank' rel="noopener noreferrer">
           <Image

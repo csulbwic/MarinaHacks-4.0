@@ -2,7 +2,7 @@ export const questions = [
   {
     question: "When is MarinaHacks 3.5?",
     answer:
-      "MarinaHacks will take place from 9:00 AM Saturday, April 13th, 2024 to 2:00 PM Sunday, April 14th, 2024.",
+      "MarinaHacks will take place from 9:00 AM Saturday, April 20th, 2024 to 2:00 PM Sunday, April 21st, 2024.",
   },
   {
     question: "What takes place at MarinaHacks?",

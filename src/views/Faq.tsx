@@ -18,7 +18,7 @@ export const Faq = () => {
       <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10 pt-20">
         Frequently Asked Questions
       </h1>
-      <div className="container mx-auto my-2 p-12 rounded-[50px] bg-[#D8D3FF] opacity-88">
+      <div className="container mx-auto my-2 p-12 rounded-[50px] bg-[#bcc5f9] opacity-88">
         <div className="grid gap-4">
           {questions.map((item, index) => (
             <div
@@ -31,11 +31,11 @@ export const Faq = () => {
                 className="flex items-center w-full justify-between"
                 onClick={() => toggleActive(index)}
               >
-                <span className="text-2xl font-bold text-black text-left">
+                <span className="text-2xl font-bold text-[#0F516F]  text-left">
                   {item.question}
                 </span>
                 <FaChevronDown
-                  className={`h-6 w-6 text-black transition-transform transform ${
+                  className={`h-6 w-6 text-[#0F516F] transition-transform transform ${
                     activeIndex === index ? "rotate-180" : ""
                   }`}
                 />
@@ -45,7 +45,7 @@ export const Faq = () => {
                   activeIndex === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <p className="px-12 pt-6 text-xl text-black">{item.answer}</p>
+                <p className="px-12 pt-6 text-xl font-bold text-[#0F516F] ">{item.answer}</p>
               </div>
             </div>
           ))}

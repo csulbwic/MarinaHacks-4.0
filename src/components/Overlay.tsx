@@ -9,17 +9,17 @@ import { NavBar } from "@/components";
 const overlayCookieName = "overlayDismissed"
 
 export const OverlayLayout = ({ children}: any) => {
-  const [showOverlay, setShowOverlay] = useState(false)
+  const [showOverlay, setShowOverlay] = useState(true)
 
   const handleDismiss = () => {
-    setShowOverlay(false);
+    setShowOverlay(true);
     Cookies.set(overlayCookieName, "true", { expires: 7 })
   }
 
   useEffect(() => {
     const cookieValue = Cookies.get(overlayCookieName)
     if (cookieValue === "true") {
-      setShowOverlay(false)
+      setShowOverlay(true)
     }
   }, [])
 

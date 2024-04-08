@@ -24,13 +24,13 @@ export const Application = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center gap-24">
-        <div className="flex flex-col w-[650px] justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
-            <h1 className="text-3xl pb-6 font-bold" style={{ color: '#0F516F' }}>
+        <div className="flex justify-center items-center gap-20">
+        <div className="flex flex-col w-[450px] justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
+            <h1 className="text-2xl pb-6 font-bold" style={{ color: '#0F516F' }}>
             Become a Participant
             </h1>
             <div className="h-4"></div>
-            <p className="text-white font-bold">Apply so that you can join a team and compete with other hackers.</p>
+            <p className="text-white font-bold text-center">Apply so that you can join a team and compete with other hackers.</p>
             <div className="h-4"></div>
             <div className="h-4"></div>
 
@@ -41,21 +41,38 @@ export const Application = () => {
             </a>
         </div>
 
-        <div className="flex flex-col w-[650px] justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
+        <div className="flex flex-col w-[450px] justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
 
-            <h1 className="text-3xl pb-6 font-bold" style={{ color: '#0F516F' }}>
+            <h1 className="text-2xl pb-6 font-bold" style={{ color: '#0F516F' }}>
             Become a Judge
             </h1>
             <div className="h-4"></div>
-            <p className="text-white font-bold">Apply to be a judge that will rate and rank the work of all hackers.</p>
+            <p className="text-white font-bold text-center">Apply to be a judge that will rate and rank the work of all hackers.</p>
             <div className="h-4"></div>
             <div className="h-4"></div>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSc4r0qtlzA3Kip3WVEgyN_RnBzBUq3TvY_GOkCQCCFPiEXJeQ/viewform?usp=sf_link'>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSd-uMWQMbPGWr7lrueLpctAaYg23QsCSz92f9CtUcIVPZZqkg/viewform'>
             <button className="btn btn-primary rounded-full text-xl border-none" style={{ backgroundColor: '#7275B6' }}>
                 Apply Now
             </button>
             </a>
         </div>
+
+        <div className="flex flex-col w-[450px] justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
+
+            <h1 className="text-2xl pb-6 font-bold" style={{ color: '#0F516F' }}>
+            Become a Guest Speaker
+            </h1>
+            <div className="h-4"></div>
+            <p className="text-white font-bold text-center">Apply if you want to provide insight as a guest speaker during the event.</p>
+            <div className="h-4"></div>
+            <div className="h-4"></div>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSd-uMWQMbPGWr7lrueLpctAaYg23QsCSz92f9CtUcIVPZZqkg/viewform'>
+            <button className="btn btn-primary rounded-full text-xl border-none" style={{ backgroundColor: '#7275B6' }}>
+                Apply Now
+            </button>
+            </a>
+        </div>
+
         </div>
 
         

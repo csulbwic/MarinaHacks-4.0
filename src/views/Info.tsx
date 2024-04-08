@@ -1,16 +1,17 @@
 import Image from 'next/image'
+import styles from '../styles/info.module.css';
 export const Info = () => {
   return (
-    <div id="info" className="flex flex-col justify-center items-center pt-16 gap-16">
-
-      <div className="pt-20"> {/* Adjust the padding value as needed */}
+    <div id="info" className={`flex flex-col justify-center items-center pt-16 gap-16 ${styles.infoContainer}`}>
+      
+      <div style = {{minHeight: '300px'}}>
         <Image
-          src="/images/MarinaHacks_3.5.png" 
-          alt="About Logo"
-          width={500} 
-          height={500} 
-          objectFit="contain" 
-        />
+        src="/images/MarinaHacks_3.5.png" 
+        alt="About Logo"
+        width={500} 
+        height={500} 
+        objectFit="contain"
+      />
       </div>
 
       <div className="flex flex-row justify-center items-start max-w-4xl mx-auto text-center">

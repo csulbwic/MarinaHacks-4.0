@@ -127,3 +127,7 @@ a {
     color-scheme: dark;
   }
 }
+
+#info {
+  scroll-margin-top: 70px; /* Adjust this value based on your navbar's height */
+}

@@ -34,7 +34,7 @@ export const Application = () => {
             <div className="h-4"></div>
             <div className="h-4"></div>
 
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSc4r0qtlzA3Kip3WVEgyN_RnBzBUq3TvY_GOkCQCCFPiEXJeQ/viewform?usp=sf_link'>
+            <a href='https://bit.ly/3PUkw4R'>
             <button className="btn btn-primary rounded-full text-xl border-none" style={{ backgroundColor: '#7275B6' }}>
                 Apply Now
             </button>

@@ -42,6 +42,8 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* --foreground-rgb: 0, 0, 0;

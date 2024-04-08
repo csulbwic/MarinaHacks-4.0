@@ -9,7 +9,7 @@ import { NavBar } from "@/components";
 const overlayCookieName = "overlayDismissed"
 
 export const OverlayLayout = ({ children}: any) => {
-  const [showOverlay, setShowOverlay] = useState(true)
+  const [showOverlay, setShowOverlay] = useState(false)
 
   const handleDismiss = () => {
     setShowOverlay(false);
@@ -28,7 +28,7 @@ export const OverlayLayout = ({ children}: any) => {
       <NavBar showOverlay={showOverlay} setShowOverlay={setShowOverlay}/>
       {showOverlay && (
         <div className="h-screen w-full bg-blue-200 flex justify-center items-center" >
-        <Image
+        {/*<Image
           src={"/images/landing_bg.png"}
           alt='background'
           width="7560"
@@ -43,6 +43,8 @@ export const OverlayLayout = ({ children}: any) => {
           className={style.logo}
         />
         {/* <div className={style.wave}></div> */}
+
+        
         <div className={style.learnmore}>
           <button onClick={handleDismiss} className={style.text}>Learn More</button>
         </div>

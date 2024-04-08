@@ -62,7 +62,7 @@ export const Landing = () => {
       )}
 
 <Image 
-          src={"/images/WiC_logo_white.png"}
+          src={"/images/wic_logo_white.png"}
           alt='background'
           width="200"
           height="0"

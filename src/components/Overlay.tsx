@@ -13,12 +13,12 @@ export const OverlayLayout = ({ children}: any) => {
 
   const handleDismiss = () => {
     setShowOverlay(false);
-    Cookies.set(overlayCookieName, "true", { expires: 7 })
+    Cookies.set(overlayCookieName, "false", { expires: 7 })
   }
 
   useEffect(() => {
     const cookieValue = Cookies.get(overlayCookieName)
-    if (cookieValue === "true") {
+    if (cookieValue === "false") {
       setShowOverlay(false)
     }
   }, [])

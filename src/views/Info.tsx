@@ -2,9 +2,9 @@ import Image from 'next/image'
 import styles from '../styles/info.module.css';
 export const Info = () => {
   return (
-    <div id="info" className={`flex flex-col justify-center items-center pt-16 gap-16 ${styles.infoContainer}`}>
+    <div id="info" className={`flex flex-col justify-center items-center pt-20 gap-16 ${styles.infoContainer}`}>
       
-      <div style = {{minHeight: '300px'}}>
+      <div >
         <Image
         src="/images/MarinaHacks_3.5.png" 
         alt="About Logo"

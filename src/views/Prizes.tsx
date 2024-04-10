@@ -14,7 +14,7 @@ export const Prizes = () => {
         {/* 2020 Winners */}
         <div className="relative">
           <Image
-            src={"/images/mousepad_jellyfish.png"}
+            src={"/images/speakers_charger_jellyfish.png"}
             alt="First Prize"
             width="450"
             height="450"

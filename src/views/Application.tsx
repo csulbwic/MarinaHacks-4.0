@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export const Application = () => {
     return (
-        
-    <div id="application" className="flex flex-col justify-center items-center pt-20 gap-16">
+    
+                    <div id="application" className="flex flex-col justify-center items-center pt-20 gap-16">
 
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl font-bold pt-10" style={{ color: '#0F516F' }}>
@@ -13,16 +13,6 @@ export const Application = () => {
             April 20th - 21st, 2024
         </h1>
       </div>
-
-      <div className="flex-shrink-0"  style={{ transform: 'translateX(15px)'}}>
-          <Image
-            src="/images/mermaid.png" // Replace with the correct path to your mermaid image
-            alt="Mermaid"
-            width={400} // Set the desired width
-            height={400} // Set the desired height
-            className="opacity-75" // Apply the transparency
-          />
-        </div>
 
         <div className="flex justify-center items-center gap-20">
         <div className="flex flex-col w-[450px] justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
@@ -74,8 +64,7 @@ export const Application = () => {
         </div>
 
         </div>
-
-        
-    </div>
+            </div>
+    
     )
 }

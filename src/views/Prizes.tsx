@@ -12,7 +12,7 @@ export const Prizes = () => {
       {/* Flex container for the jellyfish images and text */}
       <div className="flex justify-center items-center gap-10">
         {/* 2020 Winners */}
-        <div className="relative">
+        <div className="relative animate-bounce">
           <Image
             src={"/images/mousepad_jellyfish.png"}
             alt="First Prize"
@@ -22,7 +22,7 @@ export const Prizes = () => {
     
         </div>
 
-        <div className="relative">
+        <div className="relative animate-bounce delay-100">
           <Image
             src={"/images/mouse_jellyfish.png"}
             alt="Second Prize"
@@ -31,7 +31,7 @@ export const Prizes = () => {
           />
         </div>
 
-        <div className="relative">
+        <div className="relative animate-bounce delay-75">
           <Image
             src={"/images/speakers_jellyfish.png"}
             alt="Third Prize"

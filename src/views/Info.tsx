@@ -2,8 +2,9 @@ import Image from 'next/image'
 import styles from '../styles/info.module.css';
 export const Info = () => {
   return (
+    <div className=" h-full w-full bg-[url('../../public/images/mermaid.png')]">
+      <div className="hero-overlay bg-opacity-10"></div>
     <div id="info" className={`flex flex-col justify-center items-center pt-16 gap-16 ${styles.infoContainer}`}>
-      
       <div style = {{minHeight: '300px'}}>
         <Image
         src="/images/MarinaHacks_3.5.png" 
@@ -24,6 +25,7 @@ export const Info = () => {
               {"This semester's MarinaHacks Mini will take place virtually as a 24-hour event from April 20-21st via Discord. You will be able to win prizes, network with other students, attend workshops, in order to build your resume and most importantly have fun!"}
             </p>
           </div>
+      </div>
       </div>
     </div>
 

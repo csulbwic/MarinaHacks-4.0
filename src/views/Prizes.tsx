@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import styles from "@/styles/prizes.module.css";
 
 export const Prizes = () => {
   return (
@@ -12,7 +13,7 @@ export const Prizes = () => {
       {/* Flex container for the jellyfish images and text */}
       <div className="flex justify-center items-center gap-10">
         {/* 2020 Winners */}
-        <div className="relative animate-bounce">
+        <div className={`${styles.JellyFish1}`}>
           <Image
             src={"/images/mousepad_jellyfish.png"}
             alt="First Prize"
@@ -22,7 +23,7 @@ export const Prizes = () => {
     
         </div>
 
-        <div className="relative animate-bounce delay-100">
+        <div className={`${styles.JellyFish2}`}>
           <Image
             src={"/images/mouse_jellyfish.png"}
             alt="Second Prize"
@@ -31,7 +32,7 @@ export const Prizes = () => {
           />
         </div>
 
-        <div className="relative animate-bounce delay-75">
+        <div className={`${styles.JellyFish3}`}>
           <Image
             src={"/images/speakers_jellyfish.png"}
             alt="Third Prize"

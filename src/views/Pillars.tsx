@@ -58,7 +58,7 @@ export const Pillars = () => {
         </div>
         <div className="swap-off">
           <div className="card w-96 h-80 justify-center items-center bg-[#A798FF]">
-            <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">
+            <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Hacker's Favorites"}
             </h1>
             <Image src="/images/turtle_with_heart.png" width={100} height={100} alt="Turtle with Heart" className="animate-pulse"/>
@@ -76,7 +76,7 @@ export const Pillars = () => {
         </div>
         <div className="swap-off">
           <div className="card w-96 h-80 justify-center items-center bg-[#8496FE]">
-            <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">
+            <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Best Social Goods"}
            </h1>
             <Image src="/images/shell.png" width={150} height={150} alt="Turtle with Heart" className="animate-bounce"/>
@@ -94,7 +94,7 @@ export const Pillars = () => {
         </div>
         <div className="swap-off">
           <div className="card w-96 h-80 justify-center items-center bg-[#6085F2]">
-            <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">
+            <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Best Entertainment"}
            </h1>
             <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Turtle with Heart" className="animate-spin"/>

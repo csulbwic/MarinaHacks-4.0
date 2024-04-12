@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { questions } from "@/Data/questions";
 import { FaChevronDown } from "react-icons/fa";
+import Image from "next/image";
+import Shark from "../../public/images/shark-logo.png"
 
 type FaqItem = {
   question: string;
@@ -15,7 +17,7 @@ export const Faq = () => {
   };
   return (
     <div id="faq" className="flex flex-col justify-center items-center ">
-      <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10 pt-20">
+      <h1 className="text-6xl text-center font-extrabold text-[#0F516F] mt-20 mb-2 pb-10 pt-20">
         Frequently Asked Questions
       </h1>
       <div className="container mx-auto my-2 p-12 rounded-[50px] bg-[#bcc5f9] opacity-88">
@@ -51,6 +53,9 @@ export const Faq = () => {
           ))}
         </div>
       </div>
+      <div className='z-10 relative bottom-24 -left-1/3 sm:-left-2/5 md:-left-[42%] -rotate-12'>
+            <Image src={Shark} alt="Pink Shark" className='w-4/5 h-4/5'></Image>
+        </div>
     </div>
   );
 };

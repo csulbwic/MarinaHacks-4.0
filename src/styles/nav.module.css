@@ -13,8 +13,8 @@
     align-items: center;
     position: fixed;
     top: 20px;
-    left: 0; /* Add this */
-    right: 0; /* Add this */
+    left: 20%; /* Add this */
+    right: 0%; /* Add this */
     padding: 0.7rem 2rem;
     width: 60%;
     background-color: rgba(216, 211, 255); /*Solid pink color*/

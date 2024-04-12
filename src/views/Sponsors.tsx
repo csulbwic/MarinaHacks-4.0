@@ -9,7 +9,7 @@ export const Sponsors = () => {
       </h1>
 
 
-      <div className={`${style.container}  flex flex-row flex-wrap justify-center items-center gap-6 pb-6`}>
+      <div className={`${style.container}  flex flex-row flex-wrap justify-center items-center`}>
 
         <div className="rounded-2xl p-20">
           <Image

@@ -4,10 +4,8 @@ import styles from "@/styles/pillars.module.css"
 
 export const Pillars = () => {
   return (
-    <>
-    <div
-      id="pillars"
-      className="flex-col justify-center items-center hidden sm:flex"
+    <div id="pillars">
+    <div className="flex-col justify-center items-center hidden sm:flex"
     >
       <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
       <div className="container flex flex-col justify-center items-center gap-6 mb-10 relative z-10">
@@ -46,7 +44,7 @@ export const Pillars = () => {
 
 
 
-    <div id="pillars" className="flex flex-col justify-center items-center sm:hidden">
+    <div className="flex flex-col justify-center items-center sm:hidden">
       <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
       <label className="swap swap-flip justify-center items-center w-fit h-fit mb-5">
         <input type="checkbox" />
@@ -103,7 +101,7 @@ export const Pillars = () => {
         </div>
       </label>
     </div>
-    </>
+    </div>
   );
 };
 ``;

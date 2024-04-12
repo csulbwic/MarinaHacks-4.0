@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Shark from '../../public/images/Large_pink_shark.png'
 
 export const Application = () => {
     return (
@@ -14,7 +15,7 @@ export const Application = () => {
         </h1>
       </div>
 
-        <div className="flex flex-col md:flex-row md:carousel md:carousel-end md:w-11/12 md:rounded-box justify-center items-center text-center gap-10 mt-5">
+        <div className="z-0 flex flex-col md:flex-row md:carousel md:carousel-end md:w-11/12 md:rounded-box justify-center items-center text-center gap-10 mt-5">
         <div className="flex flex-col md:carousel-item w-96 h-60 justify-center items-center p-10 rounded-2xl" style={{backgroundColor: '#C2BBFF'}}>
             <h1 className="text-2xl pb-6 font-bold" style={{ color: '#0F516F' }}>
             Become a Participant
@@ -64,7 +65,10 @@ export const Application = () => {
         </div>
 
         </div>
-            </div>
+        <div className='z-10 relative bottom-24 -right-1/3 sm:-right-2/5 md:-right-[42%] -rotate-12'>
+            <Image src={Shark} alt="Pink Shark" className='w-4/5 h-4/5'></Image>
+        </div>
+        </div>
     
     )
 }

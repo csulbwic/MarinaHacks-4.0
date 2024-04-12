@@ -5,7 +5,7 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 export const Contact = () => {
   return (
     <div id="contact" className="flex flex-col justify-center items-center py-20">
-      <h1 className="text-6xl font-bold text-black opacity-50 mt-20 mb-6">
+      <h1 className="text-6xl text-center font-bold text-black opacity-50 mt-20 mb-6">
         Hosted by Women in Computing at CSULB
       </h1>
       <div className="flex flex-row">

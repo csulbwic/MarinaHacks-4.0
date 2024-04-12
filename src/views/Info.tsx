@@ -2,8 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/info.module.css';
 export const Info = () => {
   return (
-    <div className=" h-full w-full bg-[url('../../public/images/mermaid.png')]">
-      <div className="hero-overlay bg-opacity-10"></div>
+    <div className=" h-full w-full bg-[url('../../public/images/mermaid.png')] bg-center bg-opacity-5">
     <div id="info" className={`flex flex-col justify-center items-center pt-16 gap-16 ${styles.infoContainer}`}>
       <div style = {{minHeight: '300px'}}>
         <Image
@@ -15,7 +14,7 @@ export const Info = () => {
       />
       </div>
 
-      <div className="flex flex-row justify-center items-start max-w-4xl mx-auto text-center">
+      <div className="flex flex-row justify-center items-start max-w-4xl mx-auto text-center bg-[#eefdff] bg-opacity-50">
           
           <div className="text-mhpurple-400 font-bold flex flex-col gap-8 max-w-4xl mx-auto text-center">
             <p className="text-2xl" style={{ color: '#7275B6'}}>

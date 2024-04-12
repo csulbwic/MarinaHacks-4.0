@@ -1,12 +1,13 @@
 import { FaRegHandshake, FaRegHeart, FaTv } from "react-icons/fa";
 import Image from "next/image";
+import styles from "@/styles/pillars.module.css"
 
 export const Pillars = () => {
   return (
     <>
     <div
       id="pillars"
-      className="flex-col justify-center items-center pt-12 hidden sm:flex"
+      className="flex-col justify-center items-center hidden sm:flex"
     >
       <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
       <div className="container flex flex-col justify-center items-center gap-6 mb-10 relative z-10">
@@ -21,7 +22,7 @@ export const Pillars = () => {
           <Image src="/images/turtle_with_heart.png" width={100} height={100} alt="Turtle with Heart" className="animate-pulse"/>
         </div>
         <div className="w-full m-5 flex flex-row justify-start items-center rounded-2xl p-2 bg-[#8496FE]">
-          <Image src="/images/shell.png" width={150} height={150} alt="Turtle with Heart" className="animate-bounce"/>
+          <Image src="/images/shell.png" width={150} height={150} alt="Shell" className="animate-bounce"/>
           <p className="text-1xl w-6/12 text-bold text-left flex items-center justify-start text-white">
             {"Innovation can spark a wave of positive change. Develop technology that can help improve our society or our enviroment!"}
           </p>
@@ -38,14 +39,14 @@ export const Pillars = () => {
           <p className="text-1xl w-6/12 text-bold text-left flex items-center justify-start text-white">
             {"Create technology that enhances engagement! This category focuses on individuality of the developer's technology, caputring everyone's attention! "}
           </p>
-          <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Turtle with Heart" className="animate-spin"/>
+          <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Shark" className={`${styles.SharkSpin}`}/>
         </div>
       </div>
     </div>
 
 
 
-    <div id="pillars" className="flex flex-col justify-center items-center pt-12 sm:hidden">
+    <div id="pillars" className="flex flex-col justify-center items-center sm:hidden">
       <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
       <label className="swap swap-flip justify-center items-center w-fit h-fit mb-5">
         <input type="checkbox" />
@@ -79,7 +80,7 @@ export const Pillars = () => {
             <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Best Social Goods"}
            </h1>
-            <Image src="/images/shell.png" width={150} height={150} alt="Turtle with Heart" className="animate-bounce"/>
+            <Image src="/images/shell.png" width={150} height={150} alt="Shell" className="animate-bounce"/>
           </div>
         </div>
       </label>
@@ -97,7 +98,7 @@ export const Pillars = () => {
             <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Best Entertainment"}
            </h1>
-            <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Turtle with Heart" className="animate-spin"/>
+            <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Shark" className={`${styles.SharkSpin}`}/>
           </div>
         </div>
       </label>

@@ -187,7 +187,7 @@ export const members = [
     name: 'Nhu Nguyen',
     group: 3,
     role: 'Sponsorship Co-Lead',
-    img: 'images/team_photos/Nhu_N.JPG',
+    img: 'images/team_photos/Nhu_Ngyuen.JPG',
     committeeType: "spnsorship",
   },
   {

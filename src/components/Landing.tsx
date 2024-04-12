@@ -13,7 +13,7 @@ export const Landing = () => {
   
   return (
     <>
-    <div className='container'>
+    <div className='container pb-30px'>
         <div className={style.bgRounded}>
         <Image 
           src={"/images/MarinaHacks_3.5_Landing.png"}
@@ -38,7 +38,7 @@ export const Landing = () => {
             console.log(showChatBubble)}}  // Show chat bubble when mouse enters container
           onMouseLeave={() => setShowChatBubble(false)} // Hide chat bubble when mouse leaves container
       >
-      <Image 
+      {/*  <Image 
         src={"/images/simplified.png"}
         alt='Shark_bubble'
         width="1000"

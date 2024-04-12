@@ -22,7 +22,7 @@ export const Info = () => {
               {"Women in Computing is hosting MarinaHacks: California State University Long Beach's annual women-centric hackathon! This free event is dedicated to bringing together women to hone their skills, develop confidence and fill the gender gap within the competitive tech industry."}
             </p>
             <p className="text-2xl" style={{ color: '#7275B6'}}>
-              {"This semester's MarinaHacks Mini will take place virtually as a 24-hour event from April 20-21st via Discord. You will be able to win prizes, network with other students, attend workshops, in order to build your resume and most importantly have fun!"}
+              {"This semester's MarinaHacks Mini will take place virtually as a 24-hour event from April 13-14th via Discord. You will be able to win prizes, network with other students, attend workshops, in order to build your resume and most importantly have fun!"}
             </p>
           </div>
       </div>

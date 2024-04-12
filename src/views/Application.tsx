@@ -9,8 +9,8 @@ export const Application = () => {
         <h1 className="text-6xl text-center font-extrabold text-[#0F516F] mt-20 mb-2">
             Apply for Hackathon
         </h1>
-        <h1 className="text-4xl font-bold mb-5" style={{ color: '#7275B6' }}>
-            April 20th - 21st, 2024
+        <h1 className="text-4xl font-bold pt-5" style={{ color: '#7275B6' }}>
+            April 13th - 14th, 2024
         </h1>
       </div>
 

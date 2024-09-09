@@ -99,10 +99,7 @@ body {
 }
 
 body {
-  background: linear-gradient(to bottom,#EEFDFF, #DAF6FF, #C5EFFF, #9BE0FF,
-  #71D1FF, #5CCAFF, #47C2FF);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #FAEADA;
 }
 
 body:before{
@@ -114,9 +111,9 @@ body:before{
   right: 0;
   width: 100%;
   z-index: -1;
-  background: linear-gradient(to bottom, #EEFDFF 0%, #DAF6FF 14.28%, #C5EFFF 28.56%,
-  #9BE0FF 42.84%, #71D1FF 57.12%, #5CCAFF 71.4%, #47C2FF 85.68%);
+  background: #FAEADA;
 }
+
 a {
   color: inherit;
   text-decoration: none;

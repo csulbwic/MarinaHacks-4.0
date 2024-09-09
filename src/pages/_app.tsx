@@ -7,8 +7,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>MarinaHacks 3.5</title>
-        <link rel="icon" href="/images/shark-logo.png" />
+        <title>MarinaHacks 4.0</title>
+        <link rel="icon" href="/images/logos_4.0/3.png" />
       </Head>
       <main>
         <OverlayLayout>

@@ -3,28 +3,29 @@
 .sticky{
     position: sticky;
     z-index: 50;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
     border-radius: 50px;
 }
 
 .nav{
     display: flex;
-    justify-content: center; /* Center flex items horizontally */
+    justify-content: center;
     align-items: center;
     position: fixed;
     top: 20px;
-    left: 20%; /* Add this */
-    right: 0%; /* Add this */
+    left: 20%;
+    right: 0%;
     padding: 0.7rem 2rem;
     width: 60%;
-    background-color: rgba(216, 211, 255); /*Solid pink color*/
-    color: #7275B6;
+    background-color: #CEDDFF;
+    color: #7E76B1;
     border-radius: 50px;
     z-index: 50;
+    font-size: 0.9rem;
 }
 
 .logo{
-    display: block;
+    display: none;
 }
 
 .logoNone{
@@ -49,11 +50,11 @@
 }
 
 .ulist{
-    display: flex; /* Make sure the list is always flex to keep items in line */
+    display: flex;
 }
 
 .sublist{
-    background-color: rgba(216, 211, 255);
+    background-color: #CEDDFF;
     z-index: 999;
 }
 
@@ -68,18 +69,15 @@
     flex-direction: row;
 }
 
-
-
-
 @media screen and (min-width: 1000px){
 
     .nav{
         display: flex;
         justify-content: center;
-        font-size: 1.2rem;
-        left: 0; /* Ensure full width */
-        right: 0; /* Ensure full width */
-        margin: auto; /* Center horizontally */
+        font-size: 1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     .menuNav{
@@ -118,10 +116,10 @@
     .nav{
        display: flex;
        justify-content: center;
-       font-size: 1.5rem;
-       left: 0; /* Ensure full width */
-       right: 0; /* Ensure full width */
-       margin: auto; /* Center horizontally */
+       font-size: 1.2rem;
+       left: 0;
+       right: 0;
+       margin: auto;
     }
 
     .ulist{
@@ -143,11 +141,11 @@
    }
 
    .logo{
-    display: block;
+    display: none;
     }
 
     .logoNone{
-        display: block;
+        display: none;
     }
     .menu-horizontal{
         display: inline-flex;
@@ -155,5 +153,3 @@
         flex-direction: row;
     }
 }
-
-

@@ -1,0 +1,98 @@
+.countdownTimer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CEDDFF;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.timeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.timeNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.timeBox p {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .countdownTimer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: -15px;
+  }
+
+  .timeBox p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Surface Duo (540x720) */
+@media (max-width: 540px) and (max-height: 720px) {
+  .countdownTimer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: -50px;
+  }
+
+  .outerBox {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .timeNumber {
+    font-size: 1.5rem;
+  }
+}
+
+/* Nest Hub (1024x600) */
+@media (max-width: 1024px) and (max-height: 600px) {
+  .countdownTimer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: -60px;
+  }
+
+  .outerBox {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .timeNumber {
+    font-size: 1.2rem;
+  }
+}
+
+/* iPhone SE (375x667) */
+@media (max-width: 375px) and (max-height: 667px) {
+  .countdownTimer {
+    margin-top: 0px;
+  }
+}

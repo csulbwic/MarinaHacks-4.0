@@ -7,9 +7,9 @@ export default function Home() {
       <Landing />
       <Info />
       <Application />
+      <Team />
       <Pillars />
       <Prizes />
-      <Team />
       <Sponsors />
       <Faq />
       <Contact />

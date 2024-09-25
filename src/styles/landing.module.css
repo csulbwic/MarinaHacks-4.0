@@ -3,6 +3,23 @@
   width: 100%;
 }
 
+.sharkImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.sharkImage img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 
 .bg {
   position: absolute;
@@ -11,8 +28,6 @@
   z-index: 1;
 }
 
-
-
 .clublogo{
   position: absolute;
   bottom: 3%;
@@ -20,25 +35,6 @@
   z-index: 5;
   opacity: 0.8;
   width: 200px;
-  height: auto;
-}
-
-
-
-.chatbubble{
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  opacity: 95%;
-  z-index: 5;
-}
-
-.logoo{
-  position: absolute;
-  top: 22%;
-  left: 25px;
-  z-index: 5;
-  width: 450px;
   height: auto;
 }
 

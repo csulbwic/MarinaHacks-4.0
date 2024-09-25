@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaYinYang } from 'react-icons/fa';
 import styles from '@/styles/nav.module.css';
 import { useState } from 'react';
 import LandingLogo from '../../public/images/MarinaHacks_3.5_Landing_Logo.png'
@@ -28,7 +27,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
         
         <ul className={` ${styles.menuNav} ${menuOpen ? `${styles.menuNavopen} ${styles.navopen} ${styles.logoNone}` : ""} menu menu-horizontal px-1`}>
           <li className={` ${styles.ulist} rounded`}><Link href="/portal">Portal</Link></li>
-          <li className={` ${styles.ulist} rounded`}><Link href="/#about">About</Link></li>
+          <li className={` ${styles.ulist} rounded`}><Link href="/#info">Info</Link></li>
           <li className={` ${styles.ulist} rounded`}><Link href="/#application">Applications</Link></li>
           <li className={` ${styles.ulist} rounded`}><Link href="/#team">Teams</Link></li>
           <li className={` ${styles.ulist} rounded`}><Link href="/#faq">FAQs</Link></li>
@@ -36,7 +35,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
 
           <li className={`${styles.ulist}`}  tabIndex={0} >
             <Link href="">
-              Info
+              More
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </Link>
             <ul className={` ${styles.sublist} p-2 bg-mhsky `}>

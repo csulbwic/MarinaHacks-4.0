@@ -9,8 +9,7 @@ export const Contact = () => {
         Women in Computing at CSULB
       </h1>
       <div className="flex flex-row">
-        {/*<div className={`m-12 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400 ${style.sharkAnimation}`}>*/}
-        <div className="m-12 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
+        <div className={`m-12 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400 ${style.sharkAnimation}`}>
           <Image
             src={"/images/logos_4.0/MarinaHacks_4.0_Logo.png"}
             alt='wiclogo'

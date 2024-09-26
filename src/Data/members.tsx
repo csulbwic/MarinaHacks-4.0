@@ -34,13 +34,6 @@ export const members = [
     committeeType: 'design',
   },
   {
-    name: 'Joanne Kim',
-    group: 1,
-    role: 'Design',
-    img: 'images/team_photos/Joanne_K.JPG',
-    committeeType: 'design',
-  },
-  {
     name: 'Daksha Arvind',
     group: 1,
     role: 'Design',

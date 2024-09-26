@@ -1,19 +1,13 @@
-.pillarsContainer {
-    padding: 10% 5%;
-    text-align: center;
+.SharkSpin{
+    animation: spin 3s linear infinite; 
 }
 
-.pillarsBox {
-    background-color: #FDBBD9;
-    border-radius: 20px;
-    border: 5px solid #F26EAC;
-    padding: 30px;
-    width: 400px;  /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
 
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -7,9 +7,9 @@ export const Landing = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center">
       {/* FIXME: need to fix the response of the shark image */}
-      <div className={`${style.sharkImage} ${style.sharkAnimation}`}>
+      <div className={style.sharkImage}>
         <Image 
-          src="/images/logos_4.0/MarinaHacks_Logo_4.0_Pallete.png"
+          src="/images/logos_4.0/MarinaHacks_4.0_Logo.png"
           alt='MarinaHacks 4.0 Logo'
           width={500}
           height={500}

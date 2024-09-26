@@ -1,46 +1,22 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import styles from "@/styles/prizes.module.css";
 
 export const Prizes = () => {
   return (
-    <div id="prizes" className="flex flex-col justify-center items-center pt-16 gap-16">
+    <div id="prizes" className={styles.prizesContainer}>
       <div className="flex justify-center items-center">
-        <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 ">
+        <h1 className="text-6xl font-extrabold text-[#45494D] mt-20 mb-20 ">
           Prizes
         </h1>
       </div>
-      {/* Flex container for the jellyfish images and text */}
-      <div className="flex justify-center items-center gap-10">
-        {/* 2020 Winners */}
-        <div className={`${styles.JellyFish1}`}>
-          <Image
-            src={"/images/speakers_charger_jellyfish.png"}
-            alt="First Prize"
-            width="450"
-            height="450"
-          />
-    
-        </div>
-
-        <div className={`${styles.JellyFish2}`}>
-          <Image
-            src={"/images/mouse_jellyfish.png"}
-            alt="Second Prize"
-            width="450"
-            height="450"
-          />
-        </div>
-
-        <div className={`${styles.JellyFish3}`}>
-          <Image
-            src={"/images/speakers_jellyfish.png"}
-            alt="Third Prize"
-            width="450"
-            height="450"
-          />
-
-        </div>
+      {/* Container for the prize image */}
+      <div className="flex justify-center items-center">
+        <Image
+          src="/images/logos_4.0/3.png"
+          alt="Prizes"
+          width={450}
+          height={450}
+        />
       </div>
     </div>
   )

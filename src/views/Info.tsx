@@ -4,7 +4,7 @@ export const Info = () => {
   return (
     <div id="info" className={`${styles.infoContainer} text-center`}>
       <h1 className="text-5xl text-center font-extrabold text-[#46494C] mb-20">
-        What is MarinaHacks?
+        About MarinaHacks
       </h1>
       <p className="text-2xl" style={{ color: '#46494C'}}>
         {"Women in Computing is hosting MarinaHacks: California State University Long Beach's annual women-centric hackathon! This free event is dedicated to bringing together women to hone their skills, develop confidence and fill the gender gap within the competitive tech industry."}

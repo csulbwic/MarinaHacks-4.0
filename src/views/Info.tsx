@@ -3,7 +3,7 @@ import styles from '../styles/info.module.css';
 export const Info = () => {
   return (
     <div id="info" className={`${styles.infoContainer} text-center`}>
-      <h1 className="text-5xl text-center font-extrabold text-[#46494C] mb-20">
+      <h1 className="text-6xl text-center font-extrabold text-[#46494C] mb-20">
         What is MarinaHacks?
       </h1>
       <p className="text-2xl" style={{ color: '#46494C'}}>

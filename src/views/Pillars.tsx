@@ -1,6 +1,6 @@
 import styles from "@/styles/pillars.module.css"
 
-{/* FIXME: response design for padding */}
+
 export const Pillars = () => {
   return (
     <>

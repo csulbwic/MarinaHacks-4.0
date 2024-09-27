@@ -1,109 +1,105 @@
-import { FaRegHandshake, FaRegHeart, FaTv } from "react-icons/fa";
-import Image from "next/image";
 import styles from "@/styles/pillars.module.css"
 
+{/* FIXME: response design for padding */}
 export const Pillars = () => {
   return (
     <>
-    <div
-      id="pillars"
-      className="flex-col justify-center items-center hidden sm:flex"
-    >
-      <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
-      <div className="container flex flex-col justify-center items-center gap-6 mb-10 relative z-10">
-        <div className="w-full m-5 flex flex-row justify-start items-center rounded-2xl p-2 bg-[#A798FF]">
-          <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">
-            {"Hacker's Favorites"}
-          </h1>
-          <h1 className="text-8xl my-6 w-1/12">: </h1>
-          <p className="text-1xl w-6/12 text-bold text-left flex items-center justify-start text-white">
-            {"Build something breathtaking that everyone will love! Make it smart, make it useful, and most importantly, make it fun!"}
-          </p>
-          <Image src="/images/turtle_with_heart.png" width={100} height={100} alt="Turtle with Heart" className="animate-pulse"/>
-        </div>
-        <div className="w-full m-5 flex flex-row justify-start items-center rounded-2xl p-2 bg-[#8496FE]">
-          <Image src="/images/shell.png" width={150} height={150} alt="Shell" className="animate-bounce"/>
-          <p className="text-1xl w-6/12 text-bold text-left flex items-center justify-start text-white">
-            {"Innovation can spark a wave of positive change. Develop technology that can help improve our society or our enviroment!"}
-          </p>
-          <h1 className="text-8xl my-6 w-1/12">: </h1>
-          <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">
-            {"Best Social Goods"}
-          </h1>
-        </div>
-        <div className="w-full m-5 flex flex-row justify-start items-center rounded-2xl p-2 bg-[#6085F2]">
-          <h1 className="text-3xl font-bold my-6 w-4/12 text-center text-white">
-            {"Best Entertainment"}
-          </h1>
-          <h1 className="text-8xl pl-6 my-6 w-1/12">{":"}</h1>
-          <p className="text-1xl w-6/12 text-bold text-left flex items-center justify-start text-white">
-            {"Create technology that enhances engagement! This category focuses on individuality of the developer's technology, caputring everyone's attention! "}
-          </p>
-          <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Shark" className={`${styles.SharkSpin}`}/>
-        </div>
+    <div id="pillars" className={styles.pillarsContainer}>
+      <div className="flex justify-center items-center">
+        <h1 className="text-6xl font-extrabold text-[#46494C] mb-20">
+          Pillars
+        </h1>
       </div>
+
+      <div className="flex flex-wrap justify-center items-stretch gap-8">
+        
+        <div className={`${styles.pillarsBox} flex-1 min-w-[250px] max-w-[350px] flex flex-col`}>
+              <h2 className="text-3xl font-extrabold mb-10 text-center" style={{ color: '#46494C' }}>
+                Hacker's Favorite
+              </h2>
+              <p className="text-1xl font-bold text-center text-white flex-grow flex items-center justify-center">
+                {"build something breathtaking that everyone will love! make it smart, make it useful, and make it fun!"}
+              </p>
+        </div>
+
+        <div className={`${styles.pillarsBox} flex-1 min-w-[250px] max-w-[350px] flex flex-col`}>
+              <h2 className="text-3xl font-extrabold mb-10 text-center" style={{ color: '#46494C' }}>
+                Best Social Goods
+              </h2>
+              <p className="text-1xl font-bold text-center text-white flex-grow flex items-center justify-center">
+              {"innovation can spark a wave of positive change. develop technology that can help improve our society or our environment!"}
+              </p>
+        </div>
+
+        <div className={`${styles.pillarsBox} flex-1 min-w-[250px] max-w-[350px] flex flex-col`}>
+              <h2 className="text-3xl font-extrabold mb-10 text-center" style={{ color: '#46494C' }}>
+                Best Entertainment
+              </h2>
+              <p className="text-1xl font-bold text-center text-white flex-grow flex items-center justify-center">
+                {"create technology that enhances engagement! this category focuses on individuality of the developer's technology, caputring everyone's attention!"}
+              </p>
+        </div>
+
+      </div>
+
     </div>
 
-
-
+    {/*
     <div id="pillars" className="flex flex-col justify-center items-center sm:hidden">
-      <h1 className="text-6xl font-extrabold text-[#0F516F] mt-20 mb-2 pb-10">Pillars</h1>
+      <h1 className="text-6xl font-extrabold text-[#46494C] my-20">Pillars</h1>
       <label className="swap swap-flip justify-center items-center w-fit h-fit mb-5">
         <input type="checkbox" />
         <div className="swap-on">
-          <div className="card w-96 h-80 justify-center items-center bg-[#A798FF]">
-            <p className="text-2xl w-9/12 text-bold text-left flex items-center justify-start text-white">
-              {"Build something breathtaking that everyone will love! Make it smart, make it useful, and most importantly, make it fun!"}
+          <div className="card w-96 h-80 justify-center items-center bg-[#FDBBD9]">
+            <p className="text-2xl w-9/12 text-bold font-bold text-center flex items-center justify-start text-white">
+              {"build something breathtaking that everyone will love! make it smart, make it useful, and make it fun!"}
             </p>
           </div>
         </div>
+
         <div className="swap-off">
-          <div className="card w-96 h-80 justify-center items-center bg-[#A798FF]">
+          <div className="card w-96 h-80 justify-center items-center bg-[#FDBBD9]">
             <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Hacker's Favorites"}
             </h1>
-            <Image src="/images/turtle_with_heart.png" width={100} height={100} alt="Turtle with Heart" className="animate-pulse"/>
           </div>
         </div>
       </label>
       <label className="swap swap-flip w-fit h-fit mb-5">
         <input type="checkbox" />
         <div className="swap-on">
-          <div className="card w-96 h-80 justify-center items-center bg-[#8496FE]">
-            <p className="text-2xl w-9/12 text-bold text-left flex items-center justify-start text-white">
-             {"Innovation can spark a wave of positive change. Develop technology that can help improve our society or our enviroment!"}
+          <div className="card w-96 h-80 justify-center items-center bg-[#EB9AC1]">
+            <p className="text-2xl w-9/12 text-bold font-bold text-center flex items-center justify-start text-white">
+             {"innovation can spark a wave of positive change. develop technology that can help improve our society or our environment!"}
             </p>
           </div>
         </div>
         <div className="swap-off">
-          <div className="card w-96 h-80 justify-center items-center bg-[#8496FE]">
+          <div className="card w-96 h-80 justify-center items-center bg-[#EB9AC1]">
             <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Best Social Goods"}
            </h1>
-            <Image src="/images/shell.png" width={150} height={150} alt="Shell" className="animate-bounce"/>
           </div>
         </div>
       </label>
       <label className="swap swap-flip w-fit h-fit mb-5">
         <input type="checkbox" />
         <div className="swap-on">
-          <div className="card w-96 h-80 justify-center items-center bg-[#6085F2]">
-            <p className="text-2xl w-9/12 text-bold text-left flex items-center justify-start text-white">
-             {"Create technology that enhances engagement! This category focuses on individuality of the developer's technology, caputring everyone's attention! "}
+          <div className="card w-96 h-80 justify-center items-center bg-[#F26EAC]">
+            <p className="text-2xl w-9/12 text-bold font-bold text-center flex items-center justify-start text-white">
+             {"create technology that enhances engagement! this category focuses on individuality of the developer's technology!"}
             </p>
           </div>
         </div>
         <div className="swap-off">
-          <div className="card w-96 h-80 justify-center items-center bg-[#6085F2]">
+          <div className="card w-96 h-80 justify-center items-center bg-[#F26EAC]">
             <h1 className="text-3xl font-bold my-6 w-9/12 text-center text-white">
              {"Best Entertainment"}
            </h1>
-            <Image src="/images/Large_pink_shark.png" width={150} height={150} alt="Shark" className={`${styles.SharkSpin}`}/>
           </div>
         </div>
       </label>
-    </div>
-    </>
+    </div> */}
+    </> 
   );
 };
-``;

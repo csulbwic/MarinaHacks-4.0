@@ -20,6 +20,25 @@
   object-fit: contain;
 }
 
+.sharkAnimation {
+  animation: sharkAnimation 10s infinite;
+}
+
+@keyframes sharkAnimation {
+  100% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
 
 .bg {
   position: absolute;
@@ -37,5 +56,7 @@
   width: 200px;
   height: auto;
 }
+
+
 
 

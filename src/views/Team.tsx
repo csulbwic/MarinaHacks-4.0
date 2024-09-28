@@ -6,10 +6,10 @@ export const Team = () => {
     return (
       <div id ="team" className={styles.teamContainer}>
 
-         <h1 className={styles.teamHeading}>MarinaHacks Team</h1>
+         <h1 className={`${styles.teamHeading} text-6xl mb-20`}>MarinaHacks Team</h1>
 
             <div>
-                <h2 className={`${styles.teamSubHeading} ${styles.designCommittee}`}>Design Committee</h2>
+                <h2 className={`${styles.teamSubHeading} ${styles.officersCommittee}`}>Women in Computing Officers</h2>
                 <div className={styles.memberContainer}>
                     {/* Map Members of group member only */}
                     {members.filter((member) => member.group === 1).map((item, index) => {
@@ -19,7 +19,7 @@ export const Team = () => {
                             role={item.role} 
                             img={item.img} 
                             key={index}
-                            committeeType="designCommittee"
+                            committeeType="officersCommittee"
                              />
                     )
                     })}

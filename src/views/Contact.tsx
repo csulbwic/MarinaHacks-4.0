@@ -1,52 +1,40 @@
-import style from '../styles/contact.module.css'
-import Image from 'next/image'
-import Link from 'next/link';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import style from '../styles/contact.module.css';
+import Image from 'next/image';
+import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 export const Contact = () => {
   return (
-    <div id="contact" className="flex flex-col justify-center items-center py-20">
-      <h1 className="text-6xl text-center font-bold text-black opacity-50 mt-20 mb-6">
-        Hosted by Women in Computing at CSULB
+    <div id="contact" className={`flex flex-col justify-center items-center ${style.contactContainer}`}>
+      <h1 className="text-6xl text-center font-bold text-[#F26EAC] mb-6">
+        Women in Computing at CSULB
       </h1>
-      <div className="flex flex-row">
-        <div className="m-12 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className={`m-6 rounded-2xl bg-gradient-to-r from-mhpurple-200 to-mhpurple-400 ${style.sharkAnimation}`}>
           <Image
-            src={"/images/MarinaHacks_3.5_Round_Logo.png"}
-            alt='wiclogo'
-            width="350"
-            height="100"
+            src={"/images/logos_4.0/MarinaHacks_4.0_Logo.png"}
+            alt="wiclogo"
+            layout="responsive"
+            width={400}
+            height={100}
+            className="max-w-full h-auto" // Ensures the image scales down on smaller screens
           />
         </div>
-        <div className="flex flex-col justify-center ">
-          <h1 className="text-6xl font-bold leading-[77px] text-white"> Connect With Us </h1><br></br>
+        <div className="flex flex-col justify-center items-center text-center">
+          <h2 className="text-2xl font-bold leading-[50px] text-[#45494C] mb-6">Contact Information</h2>
 
-          <h2 className="text-base font-bold leading-[19px] text-[#0F516F]">for general questions or sponsorship inquiries, please email us at csulbwic@gmail.com !</h2><br></br>
-
-          <div className="flex">
-            { /*< a href="https://csulbwic.com/" target='_blank'>
-              <Image
-                src={"/images/wic_logo_white.png"}
-                alt='wiclogo'
-                width="100"
-                height="100"
-              /> 
-            </a> */}
-            <a href="https://www.facebook.com/wic.csulb/" target='_blank'>
-              <FaFacebook className="h-[50px] w-[80px] text-white" />
+          <div className="flex flex-row gap-4 justify-center flex-wrap">
+            <a href="https://www.instagram.com/csulbwic/?hl=en" target="_blank">
+              <FaInstagram className="h-10 w-10 md:h-[60px] md:w-[80px] text-[#FDBBD9] hover:text-[#F26EAC]" />
             </a>
-            <a href="https://www.instagram.com/csulbwic/?hl=en" target='_blank'>
-              <button><FaInstagram className="h-[50px] w-[80px]  text-white" /></button>
+            <a href="mailto:csulbwic@gmail.com" target="_blank">
+              <FaEnvelope className="h-10 w-10 md:h-[60px] md:w-[80px] text-[#FDBBD9] hover:text-[#F26EAC]" />
             </a>
-            <a href="https://www.linkedin.com/company/csulbwic/" target='_blank'>
-              <button><FaLinkedin className="h-[50px] w-[80px]  text-white" /></button>
-            </a>
-            <a href="https://twitter.com/csulbwic" target='_blank'>
-              <button><FaTwitter className="h-[50px] w-[80px]  text-white" /></button>
+            <a href="https://www.linkedin.com/company/csulbwic/" target="_blank">
+              <FaLinkedin className="h-10 w-10 md:h-[60px] md:w-[80px] text-[#FDBBD9] hover:text-[#F26EAC]" />
             </a>
           </div>
         </div>
       </div>
     </div>
-
-  )
-}
+  );
+};

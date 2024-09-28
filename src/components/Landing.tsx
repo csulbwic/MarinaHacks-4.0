@@ -6,16 +6,16 @@ import { CountdownTimer } from './CountdownTimer'
 export const Landing = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center">
-      <div>
+      {/* FIXME: need to fix the response of the shark image */}
+      <div className={`${style.sharkImage} ${style.sharkAnimation}`}>
         <Image 
-          src="/images/logos_4.0/stickers.png"
+          src="/images/logos_4.0/MarinaHacks_Logo_4.0_Pallete.png"
           alt='MarinaHacks 4.0 Logo'
-          width={500}
-          height={500}
-          className="object-contain"
+          width={550}
+          height={550}
         />
       </div>
-      <CountdownTimer targetDate="2024-10-26T10:00:00" />
+      <CountdownTimer targetDate="2024-10-26T11:00:00" />
     </div>
   )
 }

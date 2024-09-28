@@ -1,0 +1,27 @@
+.applicationContainer {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+
+.applicationBox {
+    background-color: #F3BED8;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.applicationButton {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+

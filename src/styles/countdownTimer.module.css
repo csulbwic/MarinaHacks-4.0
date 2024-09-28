@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .countdownTimer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -10,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #CEDDFF;
+  background-color: #F26EAC;
   padding: 15px;
   border-radius: 15px;
   width: 100%;
@@ -31,13 +33,15 @@
 }
 
 .timeNumber {
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: #000;
+  color: #46494C;
 }
 
 .timeBox p {
-  color: #000;
+  color: #46494C;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
 }
 

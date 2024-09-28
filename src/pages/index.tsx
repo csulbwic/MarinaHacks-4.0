@@ -9,8 +9,6 @@ export default function Home() {
       <Application />
       <Team />
       <Pillars />
-      <Prizes />
-      <Sponsors />
       <Faq />
       <Contact />
     </div>

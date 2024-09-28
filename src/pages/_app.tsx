@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
+import { app } from '../../firebase'
 import type { AppProps } from 'next/app'
 import { OverlayLayout } from '@/components'
 

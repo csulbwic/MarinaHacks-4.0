@@ -1,0 +1,117 @@
+/* Signup.module.css */
+
+/* Overall Container */
+.container {
+    background-color: #F5EDEB; /* Soft pastel background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #D7C2FC; /* Light purple */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .headerText {
+    color: #3C3C3C;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Form Styling */
+  .form {
+    background-color: #FFF7E3; /* Light peach */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+  }
+  
+  /* Input Group and Inputs */
+  .inputGroup {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3C3C3C;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Password Wrapper */
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .showPasswordButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #00008B; /* Dark blue */
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Button Styling */
+  .button {
+    background-color: #B5A7FF;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+  }
+  
+  .button:hover {
+    background-color: #A594FF;
+  }
+  
+  /* Login Redirect Section */
+  .loginRedirect {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loginLink {
+  color: #255ace; /* Dark blue */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.loginLink:hover {
+  text-decoration: none;
+}

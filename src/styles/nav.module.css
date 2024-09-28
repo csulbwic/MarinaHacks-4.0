@@ -1,155 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-
-.sticky{
-    position: sticky;
-    z-index: 50;
-    position: -webkit-sticky;
-    border-radius: 50px;
+/* Fixed navbar */
+.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    background-color: transparent;
 }
 
-.nav{
+/* Adjust the nav styling */
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 20%;
-    right: 0%;
-    padding: 0.7rem 2rem;
-    width: 60%;
-    background-color: #CEDDFF;
-    color: #7E76B1;
+    width: 80%;
+    padding: 1rem 2rem;
+    background-color: #BDEEE4;
     border-radius: 50px;
-    z-index: 50;
-    font-size: 0.9rem;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: width 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    max-width: 100%;
+    overflow: hidden; /* Ensures content stays within */
 }
 
-.logo{
-    display: none;
-}
-
-.logoNone{
-    display: none;
-}
-
-.containerNav{
-    flex-direction: column;
-    align-items: start;
-}
-
-.menuNav{
-    display: none;
-    flex-direction: column;
-    width: max-content;
-    margin-bottom: 0.25rem;
-}
-
-.menuNavopen{
-    justify-content: flex-start;
+/* Main container inside nav */
+.containerNav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures wrapping when items are too large */
 }
 
-.ulist{
+/* Style for list items */
+.ulist {
+    padding: 0.5rem 1.5rem;
+    color: #46494C;
+    transition: color 0.3s, background-color 0.3s;
+    font-weight: 600;
+    white-space: nowrap; /* Prevents text wrapping */
+    text-align: center; /* Center-aligns text */
+}
+
+/* Hover effect on list items */
+.ulist:hover {
+    background-color: #F26EAC;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+/* Flexbox for the list items */
+.ul {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap; /* Enables wrapping */
 }
 
-.sublist{
-    background-color: #CEDDFF;
-    z-index: 999;
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1024px) {
+    .nav {
+        width: 90%;
+        font-size: 1.1rem;
+        padding: 0.8rem 1rem;
+    }
 }
 
-.menuBtn{
-    justify-content: flex-start;
-    cursor: pointer;
-}
-
-.menu-horizontal{
-    display: none;
-    width: max-content;
-    flex-direction: row;
-}
-
-@media screen and (min-width: 1000px){
-
-    .nav{
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 95%;
         font-size: 1rem;
-        left: 0;
-        right: 0;
-        margin: auto;
+        padding: 0.8rem 1rem;
     }
 
-    .menuNav{
-        display: inline-flex;
-        flex-direction: row;
-        width: max-content;
-        margin-bottom: 0.25rem;
+    .ul {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
     }
 
-    .ulist{
-        display: flex;
-     }
- 
-    .containerNav{
-        flex-direction: row;
-    }
- 
-    .menuNav{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
- 
-    .menuBtn{
-        display: none;
-    }
-
-    .menu-horizontal{
-        display: inline-flex;
-        width: max-content;
-        flex-direction: row;
+    .ulist {
+        padding: 0.3rem 1rem; /* Adjust padding for smaller items */
+        width: 100%; /* Ensure list items fill width */
+        text-align: center;
     }
 }
 
-@media screen and (min-width: 1400px){
-    .nav{
-       display: flex;
-       justify-content: center;
-       font-size: 1.2rem;
-       left: 0;
-       right: 0;
-       margin: auto;
+@media screen and (max-width: 480px) {
+    .nav {
+        width: 100%;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
     }
 
-    .ulist{
-       display: flex;
+    .ul {
+        flex-direction: column;
     }
 
-   .containerNav{
-       flex-direction: row;
-   }
-
-   .menuNav{
-       display: flex;
-       flex-direction: row;
-       width: 100%;
-   }
-
-   .menuBtn{
-       display: none;
-   }
-
-   .logo{
-    display: none;
-    }
-
-    .logoNone{
-        display: none;
-    }
-    .menu-horizontal{
-        display: inline-flex;
-        width: max-content;
-        flex-direction: row;
+    .ulist {
+        padding: 0.2rem 0.5rem;
+        width: 100%;
     }
 }

@@ -159,6 +159,11 @@
         width: 100%; /* Ensure list items fill width */
         text-align: center;
     }
+
+    .userPanelContainer {
+        margin-right: 0;
+        justify-content: center;
+      }
 }
 
 

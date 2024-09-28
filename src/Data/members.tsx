@@ -1,95 +1,95 @@
 /*
-GROUP 1: DESIGN
-GROUP 2: WEBSITE
-GROUP 3: SPONSORSHIP 
+GROUP 1: WiC Officers
+GROUP 2: Website Committee
+GROUP 3: Design Committee
 */
 
 export const members = [
   {
-    name: 'Lizeth Valdovinos',
+    name: 'Cristina Le',
     group: 1,
-    role: 'Design Co-Lead',
-    img: 'images/team_photos/Liz_V.JPG',
-    committeeType: 'design',
+    role: 'President',
+    img: 'images/team_photos/Cristina_L.JPG',
+    committeeType: "spnsorship",
   },
   {
     name: 'Citlally Vasquez-Gonzalez',
     group: 1,
-    role: 'Design Co-Lead',
+    role: 'Vice President',
     img: 'images/team_photos/Citlally_V.JPG',
     committeeType: 'design',
   },
   {
-    name: 'Angeline Dequit',
+    name: 'Jenna Koo',
     group: 1,
-    role: 'Design Officer',
-    img: 'images/team_photos/Angeline_D.JPG',
-    committeeType: 'design',
+    role: 'MarinaHacks Director',
+    img: 'images/team_photos/Jenna_K.JPG',
+    committeeType: "website",
   },
   {
-    name: 'Lexi Nguyen',
+    name: 'Lizeth Valdovinos',
     group: 1,
-    role: 'Design',
-    img: 'images/team_photos/Lexi_Nguyen.JPG',
-    committeeType: 'design',
-  },
-  {
-    name: 'Joanne Kim',
-    group: 1,
-    role: 'Design',
-    img: 'images/team_photos/Joanne_K.JPG',
-    committeeType: 'design',
-  },
-  {
-    name: 'Daksha Arvind',
-    group: 1,
-    role: 'Design',
-    img: 'images/team_photos/Daksha_A.JPG',
-    committeeType: 'design',
-  },
-  {
-    name: 'Hanna Estrada',
-    group: 1,
-    role: 'Design',
-    img: 'images/team_photos/Hanna_E.JPG',
-    committeeType: 'design',
-  },
-  {
-    name: 'Ema Rose Linarez-Gutierrez',
-    group: 1,
-    role: 'Design',
-    img: 'images/team_photos/Ema_L.JPG',
+    role: 'Graphic Designer Lead',
+    img: 'images/team_photos/Liz_V.JPG',
     committeeType: 'design',
   },
   {
     name: 'Anita Demirci',
     group: 1,
-    role: 'Design',
+    role: 'Co-Graphic Designer',
     img: 'images/team_photos/Anita_D.JPG',
     committeeType: 'design',
-},
-
-
-  {
-    name: 'Fozhan Babaeiyan',
-    group: 2,
-    role: 'Website Co-Lead',
-    img: 'images/team_photos/Fohzan_Babaeiyan.JPG',
   },
   {
     name: 'Reyna Aguirre-Okamune',
-    group: 2,
-    role: 'Website Co-Lead',
+    group: 1,
+    role: 'Social Media Chair',
     img: 'images/team_photos/Reyna_Aguirre.JPG',
     committeeType: 'website',
   },
   {
+    name: 'Lexi Nguyen',
+    group: 1,
+    role: 'Co-Sisterhood Coordinator',
+    img: 'images/team_photos/Lexi_Nguyen.JPG',
+    committeeType: 'design',
+  },
+  {
+    name: 'Daksha Arvind',
+    group: 1,
+    role: 'Event Coordinator',
+    img: 'images/team_photos/Daksha_A.JPG',
+    committeeType: 'design',
+  },
+  {
+    name: 'Fozhan Babaeiyan',
+    group: 1,
+    role: 'Co-Treasurer',
+    img: 'images/team_photos/Fohzan_Babaeiyan.JPG',
+  },
+  {
     name: 'My Lu',
-    group: 2,
-    role: 'Website Co-Lead',
+    group: 1,
+    role: 'Webmaster',
     img: 'images/team_photos/My_Lu.JPG',
     committeeType: 'website',
   },
+  {
+    name: 'Julie Truong',
+    group: 1,
+    role: 'Secretary',
+    img: 'images/team_photos/Julie_T.JPG',
+    committeeType: "website",
+  },
+  {
+    name: 'Mya Barragan',
+    group: 1,
+    role: 'School Outreach Co-Lead',
+    img: 'images/team_photos/Mya_B.JPG',
+    committeeType: "spnsorship",
+  },
+
+
   {
     name: 'Jesus Donate',
     group: 2,
@@ -112,24 +112,10 @@ export const members = [
     committeeType: "website",
   },
   {
-    name: 'Julie Truong',
-    group: 2,
-    role: 'Website Developer',
-    img: 'images/team_photos/Julie_T.JPG',
-    committeeType: "website",
-  },
-  {
     name: 'Abhinav Bachu',
     group: 2,
     role: 'Website Developer',
     img: 'images/team_photos/Abhinav_B.JPG',
-    committeeType: "website",
-  },
-  {
-    name: 'Jenna Koo',
-    group: 2,
-    role: 'Website Developer',
-    img: 'images/team_photos/Jenna_K.JPG',
     committeeType: "website",
   },
   {
@@ -174,14 +160,6 @@ export const members = [
     img: 'images/team_photos/Ajay_B.JPG',
     committeeType: "website",
   },
-  /* {
-    name: 'Zophia Laud',
-    group: 2,
-    role: 'Website Developer',
-    img: 'https://i.imgur.com/nvNYLHP.png',
-    committeeType: "website",
-  }, */
-
 
   {
     name: 'Nhu Nguyen',
@@ -190,13 +168,7 @@ export const members = [
     img: 'images/team_photos/Nhu_Ngyuen.JPG',
     committeeType: "spnsorship",
   },
-  {
-    name: 'Cristina Le',
-    group: 3,
-    role: 'Sponsorship Co-Lead',
-    img: 'images/team_photos/Cristina_L.JPG',
-    committeeType: "spnsorship",
-  },
+
   {
     name: 'Chi Vo',
     group: 3,
@@ -232,20 +204,7 @@ export const members = [
     img: 'images/team_photos/Vannela_G.JPG',
     committeeType: "spnsorship",
   },
-  {
-    name: 'Mya Barragan',
-    group: 3,
-    role: 'Sponsorship',
-    img: 'images/team_photos/Mya_B.JPG',
-    committeeType: "spnsorship",
-  },
-    /* {
-    name: 'Estfania Perez',
-    group: 2,
-    role: 'Website Developer',
-    img: 'https://i.imgur.com/nvNYLHP.png',
-    committeeType: "website",
-  }, */
+
 
 ]
 

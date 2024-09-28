@@ -4,7 +4,7 @@ export const Application = () => {
     return (
     <div id="application" className={styles.applicationContainer}>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl text-center font-extrabold text-[#46494C] mb-20">
+        <h1 className="text-6xl text-center font-extrabold text-[#46494C] mb-20">
             Apply for Hackathon!
         </h1>
       </div>

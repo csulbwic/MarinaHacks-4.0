@@ -16,7 +16,7 @@ export const Faq = () => {
   };
   return (
     <div id="faq" className= {`flex flex-col justify-center items-center ${style.faqContainer}`}>
-      <h1 className="text-6xl text-center font-extrabold text-[#45494C] mb-2 pb-10">
+      <h1 className="text-6xl text-center font-extrabold text-[#45494C] mb-20">
         Frequently Asked Questions
       </h1>
       <div className="container mx-auto my-2 p-12 px-20 rounded-[50px] bg-[#F26EAC] ">

@@ -32,11 +32,11 @@ export const Faq = () => {
                 className="flex items-center w-full justify-between"
                 onClick={() => toggleActive(index)}
               >
-                <span className="text-2xl font-bold text-[#45494C]  text-left pl-10 pr-10">
+                <span className="text-2xl font-bold text-[#FAFEF7]  text-left pl-10 pr-10">
                   {item.question}
                 </span>
                 <FaChevronDown
-                  className={`h-6 w-6 text-[#45494C] transition-transform transform ${
+                  className={`h-6 w-6 text-[#FAFEF7] transition-transform transform ${
                     activeIndex === index ? "rotate-180" : ""
                   }`}
                 />

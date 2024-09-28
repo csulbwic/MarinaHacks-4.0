@@ -109,7 +109,10 @@ body {
 }
 
 body {
-  background: #FAEADA;
+  background: linear-gradient(135deg, #fce5d4 40%, #bae4db 90%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body:before{
@@ -137,7 +140,7 @@ a {
   }
 }
 #landing {
-  scroll-margin-top: 70px; 
+  scroll-margin-top: 80px; 
 }
 
 #info {
@@ -157,9 +160,9 @@ a {
 }
 
 #faq {
-  scroll-margin-top: 70px; 
+  scroll-margin-top: 20px; 
 }
 
 #team {
-  scroll-margin-top: 70px; 
+  scroll-margin-top: 20px; 
 }

@@ -11,8 +11,8 @@ export const Landing = () => {
         <Image 
           src="/images/logos_4.0/MarinaHacks_Logo_4.0_Pallete.png"
           alt='MarinaHacks 4.0 Logo'
-          width={500}
-          height={500}
+          width={550}
+          height={550}
         />
       </div>
       <CountdownTimer targetDate="2024-10-26T11:00:00" />

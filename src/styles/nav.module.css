@@ -9,6 +9,15 @@
     background-color: transparent;
 }
 
+
+.NavbarContainerOutside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 2rem 1rem;
+}
+
 /* Adjust the nav styling */
 .nav {
     display: flex;
@@ -28,12 +37,14 @@
 }
 
 /* Main container inside nav */
+
 .containerNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap; /* Ensures wrapping when items are too large */
+    flex-wrap: wrap; 
+    /* Ensures wrapping when items are too large */
 }
 
 /* Style for list items */
@@ -62,6 +73,55 @@
     flex-wrap: wrap; /* Enables wrapping */
 }
 
+
+/*Responsive for small screen*/
+.navbarSmallscreen{
+    display: none;
+    
+    /* background: red; */
+    
+}
+
+.navbarSmallscreenOverlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    background-color: #BDEEE4;
+    color: black;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.navbarSmallscreenOverlayOverlayClose{
+    font-size: 27px;
+    color: var(--color-black);
+    cursor: pointer;
+    background: #BDEEE4;
+    position: absolute; 
+    top: 20px;
+    right: 20px;
+}
+
+.navbarSmallscreenLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarSmallscreenLinksUlist{
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-black);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+    list-style: none;
+}
+
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 1024px) {
     .nav {
@@ -70,6 +130,8 @@
         padding: 0.8rem 1rem;
     }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .nav {
@@ -88,6 +150,27 @@
         padding: 0.3rem 1rem; /* Adjust padding for smaller items */
         width: 100%; /* Ensure list items fill width */
         text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        padding-right: 3em;
+        
+    }
+    
+    .containerNav {
+        display: none;
+    }
+
+    .navbarSmallscreen{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 }
 

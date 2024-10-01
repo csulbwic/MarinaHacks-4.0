@@ -6,7 +6,7 @@ export const Info = () => {
     <div id="info" className={`${styles.infoContainer} text-center`}>
       <div className="flex items-center justify-center mb-20">
 
-      <h1 className="text-6xl font-extrabold text-[#46494C] text-center">
+      <h1 className="text-5xl font-extrabold text-[#46494C] text-center">
         About MarinaHacks
       </h1>
 

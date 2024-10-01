@@ -20,8 +20,8 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
       <Image
             src="/images/logos_4.0/short_logo_4.0.png"
             alt='MarinaHacks 4.0 Logo'
-            width={200}
-            height={200}
+            width={150}
+            height={150}
         />
 
       {/* Navigation Bar */}

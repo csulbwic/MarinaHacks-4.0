@@ -6,7 +6,7 @@ export const Team = () => {
     return (
       <div id ="team" className={styles.teamContainer}>
 
-         <h1 className={`${styles.teamHeading} text-6xl mb-20`}>MarinaHacks Team</h1>
+         <h1 className={`${styles.teamHeading} text-5xl mb-20`}>MarinaHacks Team</h1>
 
             <div>
                 <h2 className={`${styles.teamSubHeading} ${styles.officersCommittee}`}>Women in Computing Officers</h2>

@@ -48,7 +48,7 @@ export const Team = () => {
         
 
         <div className={styles.committeeHeading}>
-            <h2 className={`${styles.teamSubHeading} ${styles.sponsorshipCommittee}`}>Sponsorship Committee</h2>
+            <h2 className={`${styles.teamSubHeading} ${styles.designCommittee}`}>Design Team</h2>
                 <div className={styles.memberContainer}>
                     {/* Map Members of group member only */}
                     {members.filter((member) => member.group === 3).map((item, index) => {
@@ -58,7 +58,7 @@ export const Team = () => {
                             role={item.role} 
                             img={item.img} 
                             key={index}
-                            committeeType="sponsorshipCommittee"
+                            committeeType="designCommittee"
                             />
                     )
                     })}

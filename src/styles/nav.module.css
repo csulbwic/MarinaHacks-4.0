@@ -89,7 +89,7 @@
     width:100%;
     height: 100vh;
     background-color: #BDEEE4;
-    color: black;
+    color: #46494C;
     flex-direction: column;
     z-index: 5;
 }
@@ -112,15 +112,23 @@
 }
 
 .navbarSmallscreenLinksUlist{
-    margin: 2rem;
+    margin: 1.5rem;
     cursor: pointer;
-    color: var(--color-black);
+    color: #46494C;
     font-size: 2rem;
     text-align: center;
     font-family: var(--font-base);
     list-style: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: color 0.6s, background-color 0.6s;
 }
 
+.navbarSmallscreenLinksUlist:hover {
+    background-color: #F26EAC; /* Pink background */
+    border-radius: 20px;
+    color: #ffffff; /* White text on hover */
+}
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 1024px) {

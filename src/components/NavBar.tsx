@@ -18,7 +18,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
     <div className={` ${styles.NavbarContainerOutside} navbar-container space-x-8`}>
 
       <Image
-            src="/images/logos_4.0/5.png"
+            src="/images/logos_4.0/short_logo_4.0.png"
             alt='MarinaHacks 4.0 Logo'
             width={200}
             height={200}

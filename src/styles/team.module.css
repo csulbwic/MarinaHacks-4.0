@@ -1,38 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+.officersCommittee {
+  background-color: #F26EAC;
+}
 
-.officersCommittee { background-color: #F26EAC; }
-.websiteCommittee { background-color: #EB9AC1; }
-.sponsorshipCommittee { background-color: #FDBBD9; }
+.websiteCommittee {
+  background-color: #b9b1f4;
+}
+
+.designCommittee {
+  background-color: #f198c1;
+}
 
 .teamContainer {
   padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    text-align: center;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
 }
 
 .teamHeading {
-    color: #45494C;  
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-weight: 800;
+  color: #45494C;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 800;
+}
 
-  }
-
-  .teamSubHeading {
-    color: #FAFEF7; 
-    font-family: 'Sora', sans-serif;
-    text-align: center;
-    font-size: 1.70rem; 
-    font-weight: 800;
-    border-radius: 40px;
-    padding: 8px 30px;
-    width: max-content;
-    margin: 0 auto;
-  }
-
+.teamSubHeading {
+  color: #FAFEF7;
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 800;
+  border-radius: 40px;
+  padding: 8px 30px;
+  width: max-content;
+  margin: 0 auto;
+}
 
 .profileContainer {
   display: flex;
@@ -41,50 +46,118 @@
   padding-top: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
 .profilePic {
-  width: 20vw; /* minimize imge when window gets smaller */
-  height: 20vw; /* minimize imge when window gets smaller */
+  width: 20vw;
+  height: 20vw;
   object-fit: cover;
   border-radius: 50%;
-  max-width: 200px; /* image does not grow beyond 300px */
-  max-height: 200px; /* image does not grow beyond 300px */
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .profileName {
   color: #46494C;
   text-align: center;
-  font-size: 0.80rem; 
+  font-size: 0.8rem;
   font-weight: 700;
   padding-top: 15px;
   padding-bottom: 10px;
-  min-width: 150px; 
+  min-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .profileRole {
-  color:#FAFEF7;
+  color: #FAFEF7;
   text-align: center;
-  font-size: 0.70rem; 
+  font-size: 0.7rem;
   font-weight: 700;
   border-radius: 40px;
   padding: 5px 20px;
-  
 }
 
 .memberContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px; 
-  justify-content: center; 
+  gap: 30px;
+  justify-content: center;
   width: 100%;
 }
 
 .committeeHeading {
-  padding-top: 60px; 
+  padding-top: 60px;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .teamContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .teamSubHeading {
+    font-size: 1.4rem;
+    padding: 6px 20px;
+  }
+
+  .profilePic {
+    width: 35vw;
+    height: 35vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .profileName {
+    font-size: 0.7rem;
+  }
+
+  .profileRole {
+    font-size: 0.6rem;
+    padding: 3px 15px;
+  }
+
+  .committeeHeading {
+    padding-top: 40px;
+  }
+
+  .memberContainer {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .teamSubHeading {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+  }
+
+  .profilePic {
+    width: 40vw;
+    height: 40vw;
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .profileName {
+    font-size: 0.6rem;
+  }
+
+  .profileRole {
+    font-size: 0.5rem;
+    padding: 3px 10px;
+  }
+
+  .committeeHeading {
+    padding-top: 30px;
+  }
+
+  .memberContainer {
+    gap: 15px;
+  }
 }

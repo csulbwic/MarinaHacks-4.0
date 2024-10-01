@@ -15,10 +15,19 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
   
   
   return (
-    <div className="navbar-container space-x-8">
+    <div className={` ${styles.NavbarContainerOutside} navbar-container space-x-8`}>
+
+      <Image
+            src="/images/logos_4.0/5.png"
+            alt='MarinaHacks 4.0 Logo'
+            width={200}
+            height={200}
+        />
 
       {/* Navigation Bar */}
       <nav className={`${styles.nav} bg-mhsky font-bold text-fontDarkBlue shadow-lg`}>
+        
+        
         <div className={`${styles.containerNav} navbar flex justify-between items-center`}>
           
           

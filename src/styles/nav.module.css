@@ -9,6 +9,15 @@
     background-color: transparent;
 }
 
+
+.NavbarContainerOutside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 2rem 1rem;
+}
+
 /* Adjust the nav styling */
 .nav {
     display: flex;

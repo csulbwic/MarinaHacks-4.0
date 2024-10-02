@@ -123,6 +123,13 @@ export const members = [
     committeeType: "website",
   },
   {
+    name: 'Jesus Donate',
+    group: 2,
+    role: 'Website Developer',
+    img: 'images/team_photos/Jesus_Donate.JPG',
+    committeeType: "website",
+  },
+  {
     name: 'Mekhi Hart Dela Cruz',
     group: 2,
     role: 'MarinaMuse Project Lead',
@@ -171,6 +178,16 @@ export const members = [
     img: 'images/team_photos/2.png',
     committeeType: "website",
   },
+  {
+    name: 'Melissa Marie Gandara',
+    group: 2,
+    role: 'Mobile App Project Lead',
+    img: 'images/team_photos/2.png',
+    committeeType: "website",
+  },
+  
+
+
 
   {
     name: 'Lizeth Valdovinos',

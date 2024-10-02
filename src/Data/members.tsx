@@ -37,14 +37,14 @@ export const members = [
     name: 'Anita Demirci',
     group: 1,
     role: 'Co-Graphic Designer',
-    img: 'images/team_photos/Anita_D.JPG',
+    img: 'images/team_photos/Anita_D.jpg',
     committeeType: 'officer',
   },
   {
     name: 'Arwen Thea Saldana',
     group: 1,
     role: 'Co-Graphic Designer',
-    img: 'images/team_photos/3.png',
+    img: 'images/team_photos/Arwen_T.jpg',
     committeeType: "officer",
   },
 
@@ -94,7 +94,7 @@ export const members = [
     name: 'Gaurav Paryani',
     group: 1,
     role: 'School Outreach Co-Lead',
-    img: 'images/team_photos/3.png',
+    img: 'images/team_photos/Gaurav_P.jpg',
     committeeType: "officer",
   },
 
@@ -105,8 +105,6 @@ export const members = [
     img: 'images/team_photos/Mya_B.JPG',
     committeeType: "officer",
   },
-
-
 
   {
     name: 'Reyna Aguirre-Okamune',
@@ -119,7 +117,7 @@ export const members = [
     name: 'My Lu',
     group: 2,
     role: 'Website Developer',
-    img: 'images/team_photos/My_Lu.JPG',
+    img: 'images/team_photos/My_Lu.jpg',
     committeeType: "website",
   },
   {
@@ -140,7 +138,7 @@ export const members = [
     name: 'Justine Cruz',
     group: 2,
     role: 'MarinaMuse Developer',
-    img: 'images/team_photos/2.png',
+    img: 'images/team_photos/Justine_C.jpg',
     committeeType: "website",
   },
   {
@@ -161,7 +159,7 @@ export const members = [
     name: 'Prexa Kamani',
     group: 2,
     role: 'Portal Developer',
-    img: 'images/team_photos/2.png',
+    img: 'images/team_photos/Prexa_K.jpg',
     committeeType: "website",
   },
   {

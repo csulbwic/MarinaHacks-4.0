@@ -1,6 +1,5 @@
-// lib/firebase.ts
 import { initializeApp } from "firebase/app";
-import { getAnalytics, Analytics } from "firebase/analytics";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -14,6 +13,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics: Analytics | null = typeof window !== 'undefined' ? getAnalytics(app) : null;
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 
-export { app, analytics };
+export { app, auth, googleProvider };

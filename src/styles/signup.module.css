@@ -1,117 +1,94 @@
-/* Signup.module.css */
 
-/* Overall Container */
 .container {
-    background-color: #F5EDEB; /* Soft pastel background */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* Header Styling */
-  .header {
-    background-color: #D7C2FC; /* Light purple */
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .headerText {
-    color: #3C3C3C;
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  /* Form Styling */
-  .form {
-    background-color: #FFF7E3; /* Light peach */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    align-items: center;
-  }
-  
-  /* Input Group and Inputs */
-  .inputGroup {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .label {
-    display: block;
-    margin-bottom: 5px;
-    color: #3C3C3C;
-    font-weight: bold;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #D3D3D3;
-    font-size: 16px;
-    box-sizing: border-box;
-    background-color: white;
-    color: #333;
-  }
-  
-  /* Password Wrapper */
-  .passwordWrapper {
-    position: relative;
-  }
-  
-  .showPasswordButton {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #00008B; /* Dark blue */
-    font-size: 14px;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  /* Button Styling */
-  .button {
-    background-color: #B5A7FF;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    margin-top: 15px;
-  }
-  
-  .button:hover {
-    background-color: #A594FF;
-  }
-  
-  /* Login Redirect Section */
-  .loginRedirect {
-    margin-top: 20px;
-    text-align: center;
+  position: relative;
+  min-height: 90vh;
+  margin: 0 auto; /* Center the form horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.heading2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+  align-self: flex-start; /* Ensure it's left-aligned */
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.imgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.inputGroup {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+}
+
+.submitButton {
+  background-color: #e64c96c2;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.submitButton:hover {
+  background-color: #A594FF;
 }
 
 .loginLink {
-  color: #255ace; /* Dark blue */
-  text-decoration: underline;
-  cursor: pointer;
+  margin-top: 10px;
+  color: #FF69B4;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .loginLink:hover {
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+.sharkImage {
+  position: absolute; /* Position the shark image absolutely relative to the container */
+  bottom: 0; /* Stick the image to the bottom */
+  left: 0; /* Stick the image to the left */
+  width: 300px; /* Adjust the size of the shark */
+  z-index: 1; /* Ensure the shark stays behind the form */
 }

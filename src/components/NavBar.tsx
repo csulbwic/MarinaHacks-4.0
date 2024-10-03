@@ -13,7 +13,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
       <div className={`${styles.nav} bg-mhsky font-bold text-fontDarkBlue shadow-lg`}>
         <div className={`${styles.containerNav} flex justify-between items-center`}>
           <ul className="flex items-center justify-between space-x-6">
-           <li className={` ${styles.ulist} rounded`}><Link href="/portal">Portal</Link></li>
+           <li className={` ${styles.ulist} rounded`}><Link href="/portallogin">Portal</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#info">Info</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#application">Application</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#team">Teams</Link></li>

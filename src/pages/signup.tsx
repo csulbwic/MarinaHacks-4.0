@@ -1,92 +1,112 @@
 import React, { useState } from 'react';
-import styles from '../styles/signup.module.css'; // CSS for Sign Up
+import { 
+  createUserWithEmailAndPassword, 
+  updateProfile, 
+  GoogleAuthProvider, 
+  sendEmailVerification, 
+  signInWithPopup 
+} from "firebase/auth";
+import styles from "../styles/signup.module.css";
+import { auth } from '../../firebase';
 
 const Signup: React.FC = () => {
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
-  const [confirmPassword, setConfirmPassword] = useState<string>('');
-  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [displayName, setDisplayName] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  // Google Auth Provider instance
+  const googleProvider = new GoogleAuthProvider();
+
+  // Function to handle user sign-up with email/password
+  const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Reset any previous success message
+    setSuccess(null);
+
     if (password !== confirmPassword) {
-      alert("Passwords do not match!");
+      setError("Passwords do not match.");
       return;
     }
-    // Add logic for sign-up or authentication here
-    console.log('Name:', name, 'Email:', email, 'Password:', password);
-  };
 
-  // Toggle password visibility
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
+    try {
+      // Create a new user with email and password
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+
+      // After the user is created, update the display name
+      if (userCredential.user) {
+        await updateProfile(userCredential.user, {
+          displayName: displayName,
+        });
+
+        // Send email verification
+        await sendEmailVerification(userCredential.user);
+
+        // Set success message and clear any errors
+        setSuccess('User created successfully! Please check your email to verify your account.');
+        setError(null);
+      }
+
+    } catch (error: any) {
+      setError(error.message); // Display error
+    }
   };
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h1 className={styles.headerText}>Sign Up for MarinaHacks</h1>
+      <div className={styles.imgContainer}>
+        <img src="/images/logos_4.0/5.png" alt="Description of the image" />
       </div>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <div className={styles.inputGroup}>
-          <label htmlFor="name" className={styles.label}>Name</label>
-          <input 
-            type="text" 
-            id="name" 
-            className={styles.input} 
-            value={name}
-            onChange={(e) => setName(e.target.value)} 
-            required
-          />
-        </div>
-        <div className={styles.inputGroup}>
-          <label htmlFor="email" className={styles.label}>Email</label>
-          <input 
-            type="email" 
-            id="email" 
-            className={styles.input} 
-            value={email}
-            onChange={(e) => setEmail(e.target.value)} 
-            required
-          />
-        </div>
-        <div className={styles.inputGroup}>
-          <label htmlFor="password" className={styles.label}>Password</label>
-          <div className={styles.passwordWrapper}>
-            <input 
-              type={showPassword ? 'text' : 'password'}
-              id="password" 
-              className={styles.input} 
-              value={password}
-              onChange={(e) => setPassword(e.target.value)} 
-              required
-            />
-            <button
-              type="button"
-              onClick={togglePasswordVisibility}
-              className={styles.showPasswordButton}
-            >
-              {showPassword ? 'Hide' : 'Show'}
-            </button>
-          </div>
-        </div>
-        <div className={styles.inputGroup}>
-          <label htmlFor="confirmPassword" className={styles.label}>Confirm Password</label>
-          <input 
-            type={showPassword ? 'text' : 'password'}
-            id="confirmPassword" 
-            className={styles.input} 
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)} 
-            required
-          />
-        </div>
-        <button type="submit" className={styles.button}>Create Account</button>
+      <img src="/images/logos_4.0/MarinaHacks_4.0_Logo.png" alt="Shark Image" className={styles.sharkImage} />
+
+      {error && <div className={styles.error}>{error}</div>}
+      {success && <div className={styles.success}>{success}</div>}
+
+      <form className={styles.form} onSubmit={handleSignUp}>
+        <h1 className={styles.heading}>Create an Account</h1>
+        <h2 className={styles.heading2}>Display Name</h2>
+        <input 
+          className={styles.inputGroup}
+          type="text"
+          placeholder="Display Name"
+          value={displayName}
+          onChange={(e) => setDisplayName(e.target.value)}
+          required
+        />
+        <h2 className={styles.heading2}>Set Email</h2>
+        <input 
+          className={styles.inputGroup}
+          type="email" 
+          placeholder="Email" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+          required 
+        />
+        <h2 className={styles.heading2}>Set Password</h2>
+        <input 
+          className={styles.inputGroup}
+          type="password" 
+          placeholder="Password" 
+          value={password} 
+          onChange={(e) => setPassword(e.target.value)} 
+          required 
+        />
+        <h2 className={styles.heading2}>Confirm Password</h2>
+        <input 
+          className={styles.inputGroup}
+          type="password" 
+          placeholder="Confirm Password" 
+          value={confirmPassword} 
+          onChange={(e) => setConfirmPassword(e.target.value)} 
+          required 
+        />
+        <button className={styles.submitButton} type="submit">Sign Up</button>
+        
+        <h2 className={styles.loginLink}><a href="/portallogin">Already have an account? Log in.</a></h2>
       </form>
-      <div className={styles.loginRedirect}>
-        <p>Already have an account? <a href="/portallogin" className={styles.loginLink}>Log In</a></p>
-      </div>
     </div>
   );
 };

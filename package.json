@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/firebase": "^3.2.1",
     "@types/node": "18.15.10",
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
+    "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.14",
     "daisyui": "^2.51.5",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "firebase": "^10.13.2",
+    "firebaseui": "^6.1.0",
     "js-cookie": "^3.0.4",
     "next": "^14.1.4",
     "postcss": "^8.4.21",
@@ -24,8 +27,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-router-dom": "^6.26.2",
     "tailwindcss": "^3.2.7",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "ui": "^0.2.4"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.3"

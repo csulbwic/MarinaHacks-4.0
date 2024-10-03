@@ -57,7 +57,7 @@ const Portal: React.FC = () => {
         <h1 className={styles.headerText}>Sign in</h1>
         {error && <div className={styles.error}>{error}</div>} {/* Updated Error Message */}
         <div className={styles.inputGroup}>
-          <label htmlFor="email" className={styles.label}>Email</label>
+          <label htmlFor="email" className={styles.label}>email</label>
           <input 
             type="email" 
             id="email" 
@@ -69,7 +69,7 @@ const Portal: React.FC = () => {
           />
         </div>
         <div className={styles.inputGroup}>
-          <label htmlFor="password" className={styles.label}>Password</label>
+          <label htmlFor="password" className={styles.label}>password</label>
           <div className={styles.passwordWrapper}>
             <input 
               type={showPassword ? 'text' : 'password'}

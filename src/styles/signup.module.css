@@ -39,7 +39,7 @@
 .imgContainer {
   width: 100%;
   max-width: 400px;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto;
 }
 
 .imgContainer img {
@@ -88,11 +88,11 @@
 }
 
 .sharkImage {
-  position: absolute; /* Position the shark image absolutely relative to the container */
-  bottom: 0; /* Stick the image to the bottom */
-  left: 0; /* Stick the image to the left */
-  width: 300px; /* Adjust the size of the shark */
-  z-index: 0; /* Ensure the shark stays behind the form */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  z-index: 0;
 }
 
 .inputGroupWithIcon {
@@ -146,4 +146,12 @@
 .errorIcon, .successIcon {
   margin-right: 10px;
   font-size: 20px;
+}
+
+.sharkImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  z-index: 1;
 }

@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+.marinaHacksCommittee {
+  background-color: rgba(242,110,172,1);
+}
+
 .officersCommittee {
-  background-color: #F26EAC;
+  background-color: rgba(242,110,172,0.8);
 }
 
 .websiteCommittee {
-  background-color: #b9b1f4;
+  background-color: #e9559a;
 }
 
 .designCommittee {
-  background-color: #f198c1;
+  background-color: #d26196;
 }
 
 .teamContainer {

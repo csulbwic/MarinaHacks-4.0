@@ -9,7 +9,7 @@ export const members = [
     name: 'Jenna Koo',
     group: 1,
     role: 'MarinaHacks Director',
-    img: 'images/team_photos/Jenna_K_4.0.jpg',
+    img: 'images/team_photos/Jenna_K_4.0.JPG',
     committeeType: "marinaHacksCommittee",
   },
 
@@ -31,14 +31,14 @@ export const members = [
     name: 'Jenna Koo',
     group: 2,
     role: 'MarinaHacks Director',
-    img: 'images/team_photos/Jenna_K_4.0.jpg',
+    img: 'images/team_photos/Jenna_K_4.0.JPG',
     committeeType: "officer",
   },
   {
     name: 'Lizeth Valdovinos',
     group: 2,
     role: 'Graphic Designer Lead',
-    img: 'images/team_photos/Lizeth_V_4.0.jpg',
+    img: 'images/team_photos/Lizeth_V_4.0.JPG',
     committeeType: 'officer',
   },
   {
@@ -52,7 +52,7 @@ export const members = [
     name: 'Anita Demirci',
     group: 2,
     role: 'Co-Graphic Designer',
-    img: 'images/team_photos/Anita_D.jpg',
+    img: 'images/team_photos/Anita_D.JPG',
     committeeType: 'officer',
   },
   {
@@ -80,14 +80,14 @@ export const members = [
     name: 'Lexi Nguyen',
     group: 2,
     role: 'Co-Sisterhood Coordinator',
-    img: 'images/team_photos/Lexi_N_4.0.jpg',
+    img: 'images/team_photos/Lexi_N_4.0.JPG',
     committeeType: 'officer',
   },
   {
     name: 'Kelly Pham',
     group: 2,
     role: 'Treasurer',
-    img: 'images/team_photos/Kelly_P.jpg',
+    img: 'images/team_photos/Kelly_P.JPG',
     committeeType: 'officer',
   },
   {
@@ -124,14 +124,14 @@ export const members = [
     name: 'My Lu',
     group: 3,
     role: 'Website Developer',
-    img: 'images/team_photos/My_Lu.jpg',
+    img: 'images/team_photos/My_Lu.JPG',
     committeeType: "website",
   },
   {
     name: 'Joshua-Michael Estebat',
     group: 3,
     role: 'Website & Portal Developer',
-    img: 'images/team_photos/Joshua-E.jpg',
+    img: 'images/team_photos/Joshua-E.JPG',
     committeeType: "website",
   },
   {
@@ -145,7 +145,7 @@ export const members = [
     name: 'Mekhi Hart Dela Cruz',
     group: 3,
     role: 'MarinaMuse Project Lead',
-    img: 'images/team_photos/Mekhi_H.jpg',
+    img: 'images/team_photos/Mekhi_H.JPG',
     committeeType: "website",
   },
   {
@@ -159,14 +159,14 @@ export const members = [
     name: 'Krisha Hemani',
     group: 3,
     role: 'MarinaMuse Developer',
-    img: 'images/team_photos/Krisha_H.jpg',
+    img: 'images/team_photos/Krisha_H.JPG',
     committeeType: "website",
   },
   {
     name: 'Kelly Pham',
     group: 3,
     role: 'Portal Project Lead',
-    img: 'images/team_photos/Kelly_P.jpg',
+    img: 'images/team_photos/Kelly_P.JPG',
     committeeType: "website",
   },
   {
@@ -187,7 +187,7 @@ export const members = [
     name: 'Julie Truong',
     group: 3,
     role: 'Mobile App Developer',
-    img: 'images/team_photos/Julie_T.jpg',
+    img: 'images/team_photos/Julie_T.JPG',
     committeeType: "website",
   },
 
@@ -197,7 +197,7 @@ export const members = [
     name: 'Lizeth Valdovinos',
     group: 4,
     role: 'Designer Co-Lead',
-    img: 'images/team_photos/Lizeth_V_4.0.jpg',
+    img: 'images/team_photos/Lizeth_V_4.0.JPG',
     committeeType: "designer",
   },
 

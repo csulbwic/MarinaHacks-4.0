@@ -21,6 +21,18 @@ export const Application = () => {
             </button>
           </a>
         </div>
+          
+        {/* Volunteer Box */}
+        <div className={`${styles.applicationBox} flex-1 min-w-[250px] max-w-[350px]`}>
+          <h2 className="text-4xl font-extrabold mb-10 mr-5 ml-5" style={{ color: '#46494C' }}>
+            Volunteer
+          </h2>
+          <a href='https://forms.gle/c8KpExyu8mynfgUW7' target="_blank" rel="noopener noreferrer" className="block text-center">
+            <button className={`${styles.applicationButton} btn btn-primary rounded-full text-2xl border-none px-10 py-2`} style={{ backgroundColor: '#E276AA', textTransform: 'none' }}>
+              apply here
+            </button>
+          </a>
+        </div>
 
         {/* Mentor Box */}
         <div className={`${styles.applicationBox} flex-1 min-w-[250px] max-w-[350px]`}>

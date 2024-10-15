@@ -133,3 +133,13 @@
   width: 300px; /* Adjust the size of the shark */
   z-index: 1; /* Ensure the shark stays behind the form */
 }
+
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center; /* Center the error message */
+}

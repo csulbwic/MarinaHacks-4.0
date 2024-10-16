@@ -51,7 +51,7 @@
   border-radius: 5px;
   border: 1px solid #D3D3D3;
   font-size: 16px;
-  box-sizing: border-box; /* Ensure padding does not affect width */
+  box-sizing: border-box;
   background-color: white;
   color: #333;
 }

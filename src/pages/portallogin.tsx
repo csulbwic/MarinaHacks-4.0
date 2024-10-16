@@ -71,7 +71,7 @@ const Portal: React.FC = () => {
           <label htmlFor="password" className={styles.label}>Password</label>
           <div className={styles.passwordWrapper}>
             <input 
-              type={showPassword ? 'text' : 'password'}  // Conditionally change the input type
+              type={showPassword ? 'text' : 'password'}
               id="password" 
               className={styles.input} 
               value={password}

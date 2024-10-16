@@ -29,7 +29,7 @@ const Portal: React.FC = () => {
       // Check if the email is verified
       if (user.emailVerified) {
         console.log('Logged in:', user);
-        window.location.href = '/dashboard'; // Redirect to dashboard if email is verified
+        window.location.href = '/edit-profile'; // Redirect to edit-profile if email is verified
       } else {
         // If the email is not verified, show an error message
         setError('Please verify your email before logging in.');

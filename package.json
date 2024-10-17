@@ -16,6 +16,7 @@
     "daisyui": "^2.51.5",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "firebase": "^10.14.1",
     "js-cookie": "^3.0.4",
     "lodash": "^4.17.21",
     "next": "^14.2.13",

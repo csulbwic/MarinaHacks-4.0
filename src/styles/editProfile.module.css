@@ -1,0 +1,159 @@
+.container {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .form {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .headerText {
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+
+  .imgContainer {
+    margin-bottom: 15px;
+  }
+
+  .imgContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .inputGroup {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+    box-sizing: border-box;
+  }
+
+  .button {
+    background-color: #e64c96c2;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .button:hover {
+    background-color: #A594FF;
+  }
+
+  .uploadButton {
+    background-color: #f08899;
+    color: #FFF;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .uploadButton:hover {
+    background-color: #A594FF;
+  }
+
+  .arrow {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .avatarSelection {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .avatarSelection img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+  }
+
+  .uploadLabel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .uploadLabel:hover {
+    background-color: #ccc;
+  }
+
+  .sharkImage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .smallerButton {
+    background-color: #e64c96c2;
+    color: #FFF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .smallerButton:hover {
+    background-color: #A594FF;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 600;
+  }

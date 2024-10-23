@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import styles from '../styles/PrizeBubbleComponent.module.css'
+import styles from '../styles/prizeBubbleComponent.module.css'
 // import "../styles/"
 import Image from 'next/image';
 

@@ -5,7 +5,8 @@ import Image from 'next/image';
 export const Prize = [
     {
         name : "kodak Printomatic Instant Camera",
-        PrizeImg : "/images/prizeImg/Camera.png"
+        PrizeImg : "/images/prizeImg/Camera.png",
+        
     },
     {
         name : "SONY WH-1000XM5 Wireless Noise",

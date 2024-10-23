@@ -19,8 +19,8 @@ export const PrizeBubbleComponent = ({name,img}: PrizeBubbleProps) => (
             <p className={`${styles.pDescription}`}>{name}</p>
             <div className={`${styles.dropBubble}`}>
                 <Image src= {img} alt="prizeImg"
-                    width={250}
-                    height={250}
+                    width="250"
+                    height="250"
                 />
             </div>
         </div>

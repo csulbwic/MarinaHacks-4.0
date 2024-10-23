@@ -1,0 +1,97 @@
+
+.Bubblecontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    gap: 10px;
+}
+
+.dropBubble{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+                25px 35px 20px rgba(0,0,0,0.05),
+                25px 20px 20px rgba(0,0,0,0.05),
+                inset 25px 30px 30px rgba(255,255,255,0.9);
+    animation: bounce 3s infinite;
+    border-radius: 67% 33% 28% 72% / 59% 52% 48% 41% ;
+    margin: 20px 30px 30px 0;
+}
+
+.dropBubble::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffffc8;
+    top: 50px;
+    left: 80px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.dropBubble::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffffc8;
+    top: 90px;
+    left: 110px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* .dropContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 60px;
+    gap: 15px;
+} */
+
+.pDescription{
+    background-color: #FFD2E6 ;
+    padding: 30px;
+    border-radius: 4rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-10%) rotate(-3deg);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    25%, 75% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: translateY(10%) rotate(-3deg);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .dropBubble{
+        width: 275px;
+        height: 275px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .Bubblecontainer{
+        flex-direction: column;
+    }
+}

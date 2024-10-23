@@ -11,6 +11,7 @@ export default function Home() {
       <Application />
       <Team />
       <Pillars />
+      <Prizes/>
       <Faq />
       <Contact />
     </div>

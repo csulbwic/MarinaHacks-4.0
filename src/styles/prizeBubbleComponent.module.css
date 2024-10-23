@@ -82,6 +82,7 @@
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }
+
 @media only screen and (max-width:800px) {
     .dropBubble{
         width: 275px;

@@ -13,7 +13,8 @@ type PrizeBubbleProps = {
 }
 
 
-export const PrizeBubbleComponent = ({name,img}: PrizeBubbleProps) => (
+export const PrizeBubbleComponent = ({name,img}: PrizeBubbleProps) => {
+    return (
     <div className={`${styles.flexCol} ${styles.justifyCenter} ${styles.itemsCenter}`}>
         <div className={`${styles.Bubblecontainer}`}>
             <p className={`${styles.pDescription}`}>{name}</p>
@@ -27,5 +28,5 @@ export const PrizeBubbleComponent = ({name,img}: PrizeBubbleProps) => (
         
     </div>
 
-);
+)};
 

@@ -15,7 +15,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
   
   
   return (
-    <div className={` ${styles.NavbarContainerOutside} navbar-container space-x-8`}>
+    <div className={` ${styles.NavbarContainerOutside} ${styles.sticky} navbar-container space-x-8`}>
 
       <Image
             src="/images/logos_4.0/short_logo_4.0.png"
@@ -37,6 +37,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             <li className={` ${styles.ulist} rounded`}><Link href="/#application">Application</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#team">Teams</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#pillars">Pillars</Link></li>
+            <li className={` ${styles.ulist} rounded`}><Link href="/#prizes">Prices</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#faq">FAQ</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#contact">Contact</Link></li>
           </ul>

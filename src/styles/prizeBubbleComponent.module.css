@@ -8,7 +8,7 @@
     margin: 10px 20px;
 }
 
-/* .dropBubble{
+.dropBubble{
     width: 350px;
     height: 350px;
     position: relative;
@@ -47,7 +47,7 @@
     left: 110px;
     border-radius: 50%;
     opacity: 0.8;
-} */
+}
 
 .dropContainer{
     display: flex;

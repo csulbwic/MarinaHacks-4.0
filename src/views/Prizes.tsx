@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from "@/styles/prizes.module.css";
-import {PrizeBubbleComponent} from "../components/PrizeBubbleComponent/PrizeBubbleComponent"
+import {PrizeBubbleComponent} from "../components/PrizeBubbleComponent"
 import { Prize } from "@/Data/prize"
 
 

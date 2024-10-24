@@ -28,10 +28,11 @@ const ForgotPassword: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <img src="/images/logos_4.0/MarinaHacks_4.0_Logo.png" alt="Shark Image" className={styles.sharkImage} />
       <div className={styles.formContainer}>
         <h1 className={styles.heading}>Forgot Password</h1>
         {error && <p className={styles.error}>{error}</p>}
-        {success && <p className={styles.success}>{success}</p>}
+        {success && <p className={styles.success}>{success}</p>}     
         <form onSubmit={handleSubmit} className={styles.form}>
           <label htmlFor="email" className={styles.label}>Email</label>
           <input

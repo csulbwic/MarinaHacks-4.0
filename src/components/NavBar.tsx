@@ -45,11 +45,12 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
           
           <ul className=".navbar-links flex items-center justify-between space-x-6">
            <li className={` ${styles.ulist} rounded`}><Link href="/portallogin">Portal</Link></li>
+           <li className={` ${styles.ulist} rounded`}><Link href="/#ideagen">Project Idea Generator</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#info">Info</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#application">Application</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#team">Teams</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#pillars">Pillars</Link></li>
-            <li className={` ${styles.ulist} rounded`}><Link href="/#prizes">Prices</Link></li>
+            <li className={` ${styles.ulist} rounded`}><Link href="/#prizes">Prizes</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#faq">FAQ</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#contact">Contact</Link></li>
           </ul>
@@ -64,6 +65,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             <BiMenuAltRight color ="000" fontSize={30} className={`${styles.navbarSmallscreenOverlayOverlayClose}`} onClick={() => setToggleMenu(false)}></BiMenuAltRight>
             <ul className={`${styles.navbarSmallscreenLinks}`}>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/portallogin">Portal</Link></li>
+                <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#ideagen">Project Generator</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#info">Info</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#application">Application</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#team">Teams</Link></li>

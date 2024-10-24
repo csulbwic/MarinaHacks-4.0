@@ -1,144 +1,187 @@
 .container {
-    position: relative; /* Relative positioning to contain the absolutely positioned shark */
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
+  position: relative; /* Relative positioning to contain the absolutely positioned shark */
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.form {
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.headerText {
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.inputGroup {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.error {
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: white;
+  color: #333;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.showPasswordButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #00008B;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button {
+  background-color: #e64c96c2;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #A594FF;
+}
+
+.forgotSignUp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgotPasswordLink {
+  color: grey;
+  font-size: 18px;
+}
+
+.signUpLink {
+  color: #FF69B4;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.forgotPasswordLink:hover, .signUpLink:hover {
+  text-decoration: underline;
+}
+
+.imgContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sharkImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  z-index: 1;
+}
+
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; 
   }
-  
-  .form {
-    padding: 30px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .headerText {
-    color: #000000;
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    align-self: flex-start;
-    width: 100%;
-  }
-  
-  .inputGroup {
-    width: 100%;
-  }
-  
-  .label {
-    display: block;
-    margin-bottom: 5px;
-    color: #000000;
-    font-weight: 600;
-  }
-  
-  .error {
-    text-align: center;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #D3D3D3;
-    font-size: 16px;
-    box-sizing: border-box;
-    background-color: white;
-    color: #333;
-  }
-  
-  .passwordWrapper {
-    position: relative;
-  }
-  
-  .showPasswordButton {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #00008B;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .button {
-    background-color: #e64c96c2;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    width: 100%;
-    margin-top: 15px;
-  }
-  
-  .button:hover {
-    background-color: #A594FF;
-  }
-  
-  .forgotSignUp {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 400px;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
-  .forgotPasswordLink {
-    color: grey;
-    font-size: 18px;
-  }
-  
-  .signUpLink {
-    color: #FF69B4;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .forgotPasswordLink:hover, .signUpLink:hover {
-    text-decoration: underline;
-  }
-  
-  .imgContainer {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .imgContainer img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
+
   .sharkImage {
+    width: 200px; 
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 300px;
-    z-index: 1;
   }
-  
-  .error {
-    color: #721c24;
-    background-color: #f8d7da;
-    padding: 10px;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    text-align: center;
+
+  .form {
+    max-width: 100%;
   }
+
+  .headerText {
+    font-size: 24px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .sharkImage {
+    width: 150px;
+    left: auto;
+    right: 0; 
+  }
+
+  .form {
+    padding: 20px; 
+  }
+
+  .headerText {
+    font-size: 20px; 
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 10px 15px; 
+  }
+}

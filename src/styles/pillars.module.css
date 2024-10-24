@@ -9,9 +9,10 @@
     border: 5px solid #F26EAC;
     padding: 2rem;
     width: 100%; 
-    max-width: 350px;
+    max-width: 400px;
     height: auto; 
-    min-height: 250px; 
+    min-height: 300px;
+    max-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;

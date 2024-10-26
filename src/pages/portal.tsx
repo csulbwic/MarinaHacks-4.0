@@ -48,6 +48,7 @@ export default function portal() {
       >
         {links.map((link) => (
           <a
+            key={link.buttonName}
             href={link.link}
             target="_blank"
             className={`${styles.applicationButton} btn btn-primary rounded-md text-2xl border-none px-10 py-2`}

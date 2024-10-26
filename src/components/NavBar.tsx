@@ -50,6 +50,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
             <li className={` ${styles.ulist} rounded`}><Link href="/#team">Teams</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#pillars">Pillars</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#prizes">Prizes</Link></li>
+            <li className={` ${styles.ulist} rounded`}><Link href="/#ideagen">Project Idea Generator</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#faq">FAQ</Link></li>
             <li className={` ${styles.ulist} rounded`}><Link href="/#contact">Contact</Link></li>
           </ul>
@@ -69,6 +70,7 @@ export const NavBar = ({ showOverlay, setShowOverlay }: any) => {
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#team">Teams</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#pillars">Pillars</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#prizes">Prizes</Link></li>
+                <li className={` ${styles.ulist} rounded`}><Link href="/#ideagen">Project Idea Generator</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#faq">FAQ</Link></li>
                 <li className={` ${styles.navbarSmallscreenLinksUlist} rounded`}><Link href="/#contact">Contact</Link></li>
               </ul>

@@ -1,6 +1,5 @@
 import { CountdownTimer } from "@/components/CountdownTimer";
 import styles from "../styles/countdownTimer.module.css";
-import { link } from "fs";
 
 export default function portal() {
   console.log("current: ", new Date());
